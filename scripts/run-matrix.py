@@ -33,15 +33,15 @@ MAX_OUT = 33554432
 
 
 def pad_input(total):
-    """The input {"pad", "rest"}; the card's stdin {"a": pad, "b": rest} is exactly `total` bytes long."""
-    base = len(json.dumps({"a": "", "b": ""}, separators=(",", ":")))
+    """The input {"pad", "rest"}; the card's stdin {"a": pad, "b": pad, "c": rest} is exactly `total` bytes long."""
+    base = len(json.dumps({"a": "", "b": "", "c": ""}, separators=(",", ":")))
     half = (total - base) // 2
-    return {"pad": "a" * half, "rest": "b" * (total - base - half)}
+    return {"pad": "a" * half, "rest": "c" * (total - base - 2 * half)}
 
 
 def pad_stdin(total):
     made = pad_input(total)
-    return json.dumps({"a": made["pad"], "b": made["rest"]}, separators=(",", ":"))
+    return json.dumps({"a": made["pad"], "b": made["pad"], "c": made["rest"]}, separators=(",", ":"))
 
 
 # case: card name, input, direct (argv, cwd, stdin text or None); a case may name `special`

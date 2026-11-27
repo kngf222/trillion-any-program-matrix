@@ -43,10 +43,10 @@ CARDS = {
     "pure-compute": ("Pure computation", "Print the nth Fibonacci number", schema(n=""), ["/usr/bin/python3", "main.py", fill("n")], {}),
     "mac-only": ("Mac-only tools", "Run sw_vers, mdls and osascript", NO_INPUT, ["./run.sh"], {}),
     "docker-alpine": ("Docker image", "Run an alpine container with docker", NO_INPUT, ["./run.sh"], {}),
-    # stdin is built from two input fields, so the whole request stays under the command line's own 1 MiB input-file limit
+    # stdin is built from the pad field twice and a rest field, so the whole request stays under the command line's own 1 MiB input-file limit
     # while the stdin the program gets can pass the engine's max_stdin_bytes.
     "limit-stdin": ("Limit probe: stdin size", "Count the bytes on stdin", schema(pad="", rest=""),
-                    ["/usr/bin/python3", "main.py"], {"stdin": {"a": fill("pad"), "b": fill("rest")}}),
+                    ["/usr/bin/python3", "main.py"], {"stdin": {"a": fill("pad"), "b": fill("pad"), "c": fill("rest")}}),
     "limit-stdout": ("Limit probe: stdout size", "Print about N bytes on stdout", schema(bytes=""), ["/usr/bin/python3", "main.py", fill("bytes")], {}),
     "limit-duration": ("Limit probe: run time", "Sleep N seconds, no max_run_ms", schema(seconds=""), ["/usr/bin/python3", "main.py", fill("seconds")], {}),
 }
