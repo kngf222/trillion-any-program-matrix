@@ -1,0 +1,94 @@
+{
+  "records": [
+    {
+      "payload": {
+        "kind": "ai-tool-descriptor",
+        "id": "tool:writes-binary",
+        "label": "Writes a PNG",
+        "job": "Write a PNG to the path the input names; print its size and hash",
+        "status": "active",
+        "input_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "out_file"
+          ],
+          "properties": {
+            "out_file": {
+              "type": "string"
+            }
+          }
+        },
+        "invoke": {
+          "kind": "computer",
+          "capabilities": [
+            "use-this-computer-as-you"
+          ],
+          "workdir": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/writes-binary",
+          "argv": [
+            "/usr/bin/python3",
+            "main.py",
+            {
+              "fill": {
+                "from": "input",
+                "field": "out_file"
+              }
+            }
+          ],
+          "stdout": "json"
+        },
+        "needs": {
+          "expected_seconds": 10,
+          "network_egress": false
+        },
+        "placements": [
+          "placement:your-computer"
+        ]
+      }
+    },
+    {
+      "payload": {
+        "kind": "ai-tool-descriptor",
+        "id": "tool:writes-binary-contained",
+        "label": "Writes a PNG (contained)",
+        "job": "Write a PNG to the path the input names; print its size and hash",
+        "status": "active",
+        "input_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "out_file"
+          ],
+          "properties": {
+            "out_file": {
+              "type": "string"
+            }
+          }
+        },
+        "invoke": {
+          "kind": "computer",
+          "capabilities": [],
+          "workdir": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/writes-binary",
+          "argv": [
+            "/usr/bin/python3",
+            "main.py",
+            {
+              "fill": {
+                "from": "input",
+                "field": "out_file"
+              }
+            }
+          ],
+          "stdout": "json"
+        },
+        "needs": {
+          "expected_seconds": 10,
+          "network_egress": false
+        },
+        "placements": [
+          "placement:your-computer"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "records": [
+    {
+      "payload": {
+        "kind": "ai-tool-descriptor",
+        "id": "tool:docker-alpine",
+        "label": "Docker image",
+        "job": "Run an alpine container with docker",
+        "status": "active",
+        "input_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {}
+        },
+        "invoke": {
+          "kind": "computer",
+          "capabilities": [
+            "use-this-computer-as-you"
+          ],
+          "workdir": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/docker-alpine",
+          "argv": [
+            "./run.sh"
+          ],
+          "stdout": "json"
+        },
+        "needs": {
+          "expected_seconds": 10,
+          "network_egress": false
+        },
+        "placements": [
+          "placement:your-computer"
+        ]
+      }
+    },
+    {
+      "payload": {
+        "kind": "ai-tool-descriptor",
+        "id": "tool:docker-alpine-contained",
+        "label": "Docker image (contained)",
+        "job": "Run an alpine container with docker",
+        "status": "active",
+        "input_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {}
+        },
+        "invoke": {
+          "kind": "computer",
+          "capabilities": [],
+          "workdir": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/docker-alpine",
+          "argv": [
+            "./run.sh"
+          ],
+          "stdout": "json"
+        },
+        "needs": {
+          "expected_seconds": 10,
+          "network_egress": false
+        },
+        "placements": [
+          "placement:your-computer"
+        ]
+      }
+    }
+  ]
+}

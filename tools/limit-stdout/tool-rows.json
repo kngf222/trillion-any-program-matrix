@@ -1,0 +1,94 @@
+{
+  "records": [
+    {
+      "payload": {
+        "kind": "ai-tool-descriptor",
+        "id": "tool:limit-stdout",
+        "label": "Limit probe: stdout size",
+        "job": "Print about N bytes on stdout",
+        "status": "active",
+        "input_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "bytes"
+          ],
+          "properties": {
+            "bytes": {
+              "type": "string"
+            }
+          }
+        },
+        "invoke": {
+          "kind": "computer",
+          "capabilities": [
+            "use-this-computer-as-you"
+          ],
+          "workdir": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-stdout",
+          "argv": [
+            "/usr/bin/python3",
+            "main.py",
+            {
+              "fill": {
+                "from": "input",
+                "field": "bytes"
+              }
+            }
+          ],
+          "stdout": "json"
+        },
+        "needs": {
+          "expected_seconds": 10,
+          "network_egress": false
+        },
+        "placements": [
+          "placement:your-computer"
+        ]
+      }
+    },
+    {
+      "payload": {
+        "kind": "ai-tool-descriptor",
+        "id": "tool:limit-stdout-contained",
+        "label": "Limit probe: stdout size (contained)",
+        "job": "Print about N bytes on stdout",
+        "status": "active",
+        "input_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "bytes"
+          ],
+          "properties": {
+            "bytes": {
+              "type": "string"
+            }
+          }
+        },
+        "invoke": {
+          "kind": "computer",
+          "capabilities": [],
+          "workdir": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-stdout",
+          "argv": [
+            "/usr/bin/python3",
+            "main.py",
+            {
+              "fill": {
+                "from": "input",
+                "field": "bytes"
+              }
+            }
+          ],
+          "stdout": "json"
+        },
+        "needs": {
+          "expected_seconds": 10,
+          "network_egress": false
+        },
+        "placements": [
+          "placement:your-computer"
+        ]
+      }
+    }
+  ]
+}

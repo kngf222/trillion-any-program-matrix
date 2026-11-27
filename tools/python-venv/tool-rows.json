@@ -1,0 +1,68 @@
+{
+  "records": [
+    {
+      "payload": {
+        "kind": "ai-tool-descriptor",
+        "id": "tool:python-venv",
+        "label": "Python in a .venv",
+        "job": "Run a Python program with its own .venv and a package",
+        "status": "active",
+        "input_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {}
+        },
+        "invoke": {
+          "kind": "computer",
+          "capabilities": [
+            "use-this-computer-as-you"
+          ],
+          "workdir": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/python-venv",
+          "argv": [
+            ".venv/bin/python",
+            "main.py"
+          ],
+          "stdout": "json"
+        },
+        "needs": {
+          "expected_seconds": 10,
+          "network_egress": false
+        },
+        "placements": [
+          "placement:your-computer"
+        ]
+      }
+    },
+    {
+      "payload": {
+        "kind": "ai-tool-descriptor",
+        "id": "tool:python-venv-contained",
+        "label": "Python in a .venv (contained)",
+        "job": "Run a Python program with its own .venv and a package",
+        "status": "active",
+        "input_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {}
+        },
+        "invoke": {
+          "kind": "computer",
+          "capabilities": [],
+          "workdir": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/python-venv",
+          "argv": [
+            ".venv/bin/python",
+            "main.py"
+          ],
+          "stdout": "json"
+        },
+        "needs": {
+          "expected_seconds": 10,
+          "network_egress": false
+        },
+        "placements": [
+          "placement:your-computer"
+        ]
+      }
+    }
+  ]
+}

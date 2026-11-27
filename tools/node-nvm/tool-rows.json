@@ -1,0 +1,68 @@
+{
+  "records": [
+    {
+      "payload": {
+        "kind": "ai-tool-descriptor",
+        "id": "tool:node-nvm",
+        "label": "Node from nvm",
+        "job": "Run a Node program; print which node ran",
+        "status": "active",
+        "input_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {}
+        },
+        "invoke": {
+          "kind": "computer",
+          "capabilities": [
+            "use-this-computer-as-you"
+          ],
+          "workdir": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/node-nvm",
+          "argv": [
+            "node",
+            "main.mjs"
+          ],
+          "stdout": "json"
+        },
+        "needs": {
+          "expected_seconds": 10,
+          "network_egress": false
+        },
+        "placements": [
+          "placement:your-computer"
+        ]
+      }
+    },
+    {
+      "payload": {
+        "kind": "ai-tool-descriptor",
+        "id": "tool:node-nvm-contained",
+        "label": "Node from nvm (contained)",
+        "job": "Run a Node program; print which node ran",
+        "status": "active",
+        "input_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {}
+        },
+        "invoke": {
+          "kind": "computer",
+          "capabilities": [],
+          "workdir": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/node-nvm",
+          "argv": [
+            "node",
+            "main.mjs"
+          ],
+          "stdout": "json"
+        },
+        "needs": {
+          "expected_seconds": 10,
+          "network_egress": false
+        },
+        "placements": [
+          "placement:your-computer"
+        ]
+      }
+    }
+  ]
+}

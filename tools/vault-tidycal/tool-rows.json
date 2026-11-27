@@ -1,0 +1,82 @@
+{
+  "records": [
+    {
+      "payload": {
+        "kind": "ai-tool-descriptor",
+        "id": "tool:vault-tidycal",
+        "label": "TidyCal booking types (vault key)",
+        "job": "Count TidyCal booking types with the key mounted from the vault",
+        "status": "active",
+        "input_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {}
+        },
+        "invoke": {
+          "kind": "computer",
+          "capabilities": [
+            "use-this-computer-as-you"
+          ],
+          "workdir": "/Users/brianakhtar/dev/try-a-plain-tool-with-a-key/tools/list-my-booking-types",
+          "argv": [
+            "node",
+            "list.mjs"
+          ],
+          "stdout": "json",
+          "internet": true,
+          "credential_mounts": [
+            {
+              "secret_name": "tidycal-api-token",
+              "env": "TIDYCAL_API_TOKEN"
+            }
+          ]
+        },
+        "needs": {
+          "expected_seconds": 10,
+          "network_egress": true
+        },
+        "placements": [
+          "placement:your-computer"
+        ]
+      }
+    },
+    {
+      "payload": {
+        "kind": "ai-tool-descriptor",
+        "id": "tool:vault-tidycal-contained",
+        "label": "TidyCal booking types (vault key) (contained)",
+        "job": "Count TidyCal booking types with the key mounted from the vault",
+        "status": "active",
+        "input_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {}
+        },
+        "invoke": {
+          "kind": "computer",
+          "capabilities": [],
+          "workdir": "/Users/brianakhtar/dev/try-a-plain-tool-with-a-key/tools/list-my-booking-types",
+          "argv": [
+            "node",
+            "list.mjs"
+          ],
+          "stdout": "json",
+          "internet": true,
+          "credential_mounts": [
+            {
+              "secret_name": "tidycal-api-token",
+              "env": "TIDYCAL_API_TOKEN"
+            }
+          ]
+        },
+        "needs": {
+          "expected_seconds": 10,
+          "network_egress": true
+        },
+        "placements": [
+          "placement:your-computer"
+        ]
+      }
+    }
+  ]
+}

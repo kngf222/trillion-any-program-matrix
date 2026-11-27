@@ -1,0 +1,70 @@
+{
+  "records": [
+    {
+      "payload": {
+        "kind": "ai-tool-descriptor",
+        "id": "tool:network-example",
+        "label": "Fetch example.com",
+        "job": "Fetch https://example.com and print status and byte count",
+        "status": "active",
+        "input_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {}
+        },
+        "invoke": {
+          "kind": "computer",
+          "capabilities": [
+            "use-this-computer-as-you"
+          ],
+          "workdir": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/network-example",
+          "argv": [
+            "node",
+            "main.mjs"
+          ],
+          "stdout": "json",
+          "internet": true
+        },
+        "needs": {
+          "expected_seconds": 10,
+          "network_egress": true
+        },
+        "placements": [
+          "placement:your-computer"
+        ]
+      }
+    },
+    {
+      "payload": {
+        "kind": "ai-tool-descriptor",
+        "id": "tool:network-example-contained",
+        "label": "Fetch example.com (contained)",
+        "job": "Fetch https://example.com and print status and byte count",
+        "status": "active",
+        "input_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {}
+        },
+        "invoke": {
+          "kind": "computer",
+          "capabilities": [],
+          "workdir": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/network-example",
+          "argv": [
+            "node",
+            "main.mjs"
+          ],
+          "stdout": "json",
+          "internet": true
+        },
+        "needs": {
+          "expected_seconds": 10,
+          "network_egress": true
+        },
+        "placements": [
+          "placement:your-computer"
+        ]
+      }
+    }
+  ]
+}

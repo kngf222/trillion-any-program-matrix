@@ -1,0 +1,94 @@
+{
+  "records": [
+    {
+      "payload": {
+        "kind": "ai-tool-descriptor",
+        "id": "tool:pure-compute",
+        "label": "Pure computation",
+        "job": "Print the nth Fibonacci number",
+        "status": "active",
+        "input_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "n"
+          ],
+          "properties": {
+            "n": {
+              "type": "string"
+            }
+          }
+        },
+        "invoke": {
+          "kind": "computer",
+          "capabilities": [
+            "use-this-computer-as-you"
+          ],
+          "workdir": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/pure-compute",
+          "argv": [
+            "/usr/bin/python3",
+            "main.py",
+            {
+              "fill": {
+                "from": "input",
+                "field": "n"
+              }
+            }
+          ],
+          "stdout": "json"
+        },
+        "needs": {
+          "expected_seconds": 10,
+          "network_egress": false
+        },
+        "placements": [
+          "placement:your-computer"
+        ]
+      }
+    },
+    {
+      "payload": {
+        "kind": "ai-tool-descriptor",
+        "id": "tool:pure-compute-contained",
+        "label": "Pure computation (contained)",
+        "job": "Print the nth Fibonacci number",
+        "status": "active",
+        "input_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "n"
+          ],
+          "properties": {
+            "n": {
+              "type": "string"
+            }
+          }
+        },
+        "invoke": {
+          "kind": "computer",
+          "capabilities": [],
+          "workdir": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/pure-compute",
+          "argv": [
+            "/usr/bin/python3",
+            "main.py",
+            {
+              "fill": {
+                "from": "input",
+                "field": "n"
+              }
+            }
+          ],
+          "stdout": "json"
+        },
+        "needs": {
+          "expected_seconds": 10,
+          "network_egress": false
+        },
+        "placements": [
+          "placement:your-computer"
+        ]
+      }
+    }
+  ]
+}

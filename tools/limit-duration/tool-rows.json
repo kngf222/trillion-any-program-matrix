@@ -1,0 +1,94 @@
+{
+  "records": [
+    {
+      "payload": {
+        "kind": "ai-tool-descriptor",
+        "id": "tool:limit-duration",
+        "label": "Limit probe: run time",
+        "job": "Sleep N seconds, no max_run_ms",
+        "status": "active",
+        "input_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "seconds"
+          ],
+          "properties": {
+            "seconds": {
+              "type": "string"
+            }
+          }
+        },
+        "invoke": {
+          "kind": "computer",
+          "capabilities": [
+            "use-this-computer-as-you"
+          ],
+          "workdir": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-duration",
+          "argv": [
+            "/usr/bin/python3",
+            "main.py",
+            {
+              "fill": {
+                "from": "input",
+                "field": "seconds"
+              }
+            }
+          ],
+          "stdout": "json"
+        },
+        "needs": {
+          "expected_seconds": 10,
+          "network_egress": false
+        },
+        "placements": [
+          "placement:your-computer"
+        ]
+      }
+    },
+    {
+      "payload": {
+        "kind": "ai-tool-descriptor",
+        "id": "tool:limit-duration-contained",
+        "label": "Limit probe: run time (contained)",
+        "job": "Sleep N seconds, no max_run_ms",
+        "status": "active",
+        "input_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "seconds"
+          ],
+          "properties": {
+            "seconds": {
+              "type": "string"
+            }
+          }
+        },
+        "invoke": {
+          "kind": "computer",
+          "capabilities": [],
+          "workdir": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-duration",
+          "argv": [
+            "/usr/bin/python3",
+            "main.py",
+            {
+              "fill": {
+                "from": "input",
+                "field": "seconds"
+              }
+            }
+          ],
+          "stdout": "json"
+        },
+        "needs": {
+          "expected_seconds": 10,
+          "network_egress": false
+        },
+        "placements": [
+          "placement:your-computer"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "records": [
+    {
+      "payload": {
+        "kind": "ai-tool-descriptor",
+        "id": "tool:reads-everything",
+        "label": "Reads stdin, args, a file and its own env",
+        "job": "Echo what the program got on stdin, in args, in a file and in an environment variable it sets",
+        "status": "active",
+        "input_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "first",
+            "second"
+          ],
+          "properties": {
+            "first": {
+              "type": "string"
+            },
+            "second": {
+              "type": "string"
+            }
+          }
+        },
+        "invoke": {
+          "kind": "computer",
+          "capabilities": [
+            "use-this-computer-as-you"
+          ],
+          "workdir": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/reads-everything",
+          "argv": [
+            "/usr/bin/python3",
+            "main.py",
+            {
+              "fill": {
+                "from": "input",
+                "field": "first"
+              }
+            },
+            {
+              "fill": {
+                "from": "input",
+                "field": "second"
+              }
+            }
+          ],
+          "stdout": "json",
+          "stdin": {
+            "fill": {
+              "from": "input"
+            }
+          }
+        },
+        "needs": {
+          "expected_seconds": 10,
+          "network_egress": false
+        },
+        "placements": [
+          "placement:your-computer"
+        ]
+      }
+    },
+    {
+      "payload": {
+        "kind": "ai-tool-descriptor",
+        "id": "tool:reads-everything-contained",
+        "label": "Reads stdin, args, a file and its own env (contained)",
+        "job": "Echo what the program got on stdin, in args, in a file and in an environment variable it sets",
+        "status": "active",
+        "input_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "first",
+            "second"
+          ],
+          "properties": {
+            "first": {
+              "type": "string"
+            },
+            "second": {
+              "type": "string"
+            }
+          }
+        },
+        "invoke": {
+          "kind": "computer",
+          "capabilities": [],
+          "workdir": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/reads-everything",
+          "argv": [
+            "/usr/bin/python3",
+            "main.py",
+            {
+              "fill": {
+                "from": "input",
+                "field": "first"
+              }
+            },
+            {
+              "fill": {
+                "from": "input",
+                "field": "second"
+              }
+            }
+          ],
+          "stdout": "json",
+          "stdin": {
+            "fill": {
+              "from": "input"
+            }
+          }
+        },
+        "needs": {
+          "expected_seconds": 10,
+          "network_egress": false
+        },
+        "placements": [
+          "placement:your-computer"
+        ]
+      }
+    }
+  ]
+}

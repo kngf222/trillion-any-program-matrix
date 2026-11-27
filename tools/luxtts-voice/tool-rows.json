@@ -1,0 +1,108 @@
+{
+  "records": [
+    {
+      "payload": {
+        "kind": "ai-tool-descriptor",
+        "id": "tool:luxtts-voice",
+        "label": "LuxTTS voice (big local model)",
+        "job": "Say words in a voice with LuxTTS through the existing wrapper script",
+        "status": "active",
+        "input_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "text",
+            "voice_file",
+            "out_file"
+          ],
+          "properties": {
+            "text": {
+              "type": "string"
+            },
+            "voice_file": {
+              "type": "string"
+            },
+            "out_file": {
+              "type": "string"
+            }
+          }
+        },
+        "invoke": {
+          "kind": "computer",
+          "capabilities": [
+            "use-this-computer-as-you"
+          ],
+          "workdir": "/Users/brianakhtar/dev/LuxTTS",
+          "argv": [
+            "/Users/brianakhtar/dev/LuxTTS/.venv/bin/python",
+            "/Users/brianakhtar/dev/trillion-wrap-luxtts/tools/say-words-in-a-voice/say.py"
+          ],
+          "stdout": "json",
+          "stdin": {
+            "fill": {
+              "from": "input"
+            }
+          }
+        },
+        "needs": {
+          "expected_seconds": 10,
+          "network_egress": false
+        },
+        "placements": [
+          "placement:your-computer"
+        ]
+      }
+    },
+    {
+      "payload": {
+        "kind": "ai-tool-descriptor",
+        "id": "tool:luxtts-voice-contained",
+        "label": "LuxTTS voice (big local model) (contained)",
+        "job": "Say words in a voice with LuxTTS through the existing wrapper script",
+        "status": "active",
+        "input_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "text",
+            "voice_file",
+            "out_file"
+          ],
+          "properties": {
+            "text": {
+              "type": "string"
+            },
+            "voice_file": {
+              "type": "string"
+            },
+            "out_file": {
+              "type": "string"
+            }
+          }
+        },
+        "invoke": {
+          "kind": "computer",
+          "capabilities": [],
+          "workdir": "/Users/brianakhtar/dev/LuxTTS",
+          "argv": [
+            "/Users/brianakhtar/dev/LuxTTS/.venv/bin/python",
+            "/Users/brianakhtar/dev/trillion-wrap-luxtts/tools/say-words-in-a-voice/say.py"
+          ],
+          "stdout": "json",
+          "stdin": {
+            "fill": {
+              "from": "input"
+            }
+          }
+        },
+        "needs": {
+          "expected_seconds": 10,
+          "network_egress": false
+        },
+        "placements": [
+          "placement:your-computer"
+        ]
+      }
+    }
+  ]
+}

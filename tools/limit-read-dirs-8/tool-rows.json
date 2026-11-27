@@ -1,0 +1,104 @@
+{
+  "records": [
+    {
+      "payload": {
+        "kind": "ai-tool-descriptor",
+        "id": "tool:limit-read-dirs-8",
+        "label": "Limit probe: 8 runtime_read_dirs",
+        "job": "A declared program with 8 runtime_read_dirs",
+        "status": "active",
+        "input_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {}
+        },
+        "invoke": {
+          "kind": "computer",
+          "capabilities": [
+            "use-this-computer-as-you"
+          ],
+          "workdir": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-read-dirs",
+          "argv": [
+            "conda-py",
+            "main.py"
+          ],
+          "stdout": "json",
+          "programs": {
+            "conda-py": {
+              "search": "python",
+              "search_path": [
+                "/opt/homebrew/anaconda3/bin"
+              ],
+              "runtime_read_dirs": [
+                "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-read-dirs/d1",
+                "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-read-dirs/d2",
+                "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-read-dirs/d3",
+                "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-read-dirs/d4",
+                "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-read-dirs/d5",
+                "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-read-dirs/d6",
+                "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-read-dirs/d7",
+                "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-read-dirs/d8"
+              ]
+            }
+          }
+        },
+        "needs": {
+          "expected_seconds": 10,
+          "network_egress": false
+        },
+        "placements": [
+          "placement:your-computer"
+        ]
+      }
+    },
+    {
+      "payload": {
+        "kind": "ai-tool-descriptor",
+        "id": "tool:limit-read-dirs-8-contained",
+        "label": "Limit probe: 8 runtime_read_dirs (contained)",
+        "job": "A declared program with 8 runtime_read_dirs",
+        "status": "active",
+        "input_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {}
+        },
+        "invoke": {
+          "kind": "computer",
+          "capabilities": [],
+          "workdir": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-read-dirs",
+          "argv": [
+            "conda-py",
+            "main.py"
+          ],
+          "stdout": "json",
+          "programs": {
+            "conda-py": {
+              "search": "python",
+              "search_path": [
+                "/opt/homebrew/anaconda3/bin"
+              ],
+              "runtime_read_dirs": [
+                "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-read-dirs/d1",
+                "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-read-dirs/d2",
+                "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-read-dirs/d3",
+                "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-read-dirs/d4",
+                "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-read-dirs/d5",
+                "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-read-dirs/d6",
+                "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-read-dirs/d7",
+                "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-read-dirs/d8"
+              ]
+            }
+          }
+        },
+        "needs": {
+          "expected_seconds": 10,
+          "network_egress": false
+        },
+        "placements": [
+          "placement:your-computer"
+        ]
+      }
+    }
+  ]
+}
