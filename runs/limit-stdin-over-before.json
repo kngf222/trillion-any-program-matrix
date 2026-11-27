@@ -2,7 +2,7 @@
   "case": "limit-stdin-over",
   "label": "before",
   "card": "limit-stdin",
-  "date": "2026-11-27 01:10:50 CST",
+  "date": "2026-11-27 01:15:41 CST",
   "direct": {
     "argv": [
       "/usr/bin/python3",
@@ -22,22 +22,22 @@
   },
   "through_trillion": {
     "tool": "tool:limit-stdin",
-    "exit": 2,
-    "seconds": 0.2,
+    "exit": 1,
+    "seconds": 1.16,
     "worked": false,
-    "reference": null,
+    "reference": "15e57d16-9481-4897-b711-3cfb2e429f80",
     "stdout_bytes": 0,
     "stdout_tail": "",
-    "stderr": "The input file /Users/brianakhtar/dev/trillion-workshop/.git/scratch/matrix/limit-stdin-over-limit-stdin-before.json is 1048617 bytes; an input is at most 1048576.\n"
+    "stderr": "This computer does not offer \"use-this-computer-as-you\", which this tool needs, so it did not start. No computer asked offers it: f596fa0076f6c620. Reference: 15e57d16-9481-4897-b711-3cfb2e429f80.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_capability_not_offered_here. Cause: trillion::tool_runs::tools::computer@src/tool_runs/tools/computer.rs:197:28:condition: capability_not_reported#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
   },
   "contained": {
     "tool": "tool:limit-stdin-contained",
-    "exit": 2,
-    "seconds": 0.2,
+    "exit": 1,
+    "seconds": 0.85,
     "worked": false,
-    "reference": null,
+    "reference": "14afc816-f10c-43cf-bd73-c3c7f0994007",
     "stdout_bytes": 0,
     "stdout_tail": "",
-    "stderr": "The input file /Users/brianakhtar/dev/trillion-workshop/.git/scratch/matrix/limit-stdin-over-limit-stdin-contained-before.json is 1048627 bytes; an input is at most 1048576.\n"
+    "stderr": "This tool cannot run on this computer: it is another kind of tool, it needs a program that is not here, or it names a path outside its folder. Run it on a computer that has what it needs. Reference: 14afc816-f10c-43cf-bd73-c3c7f0994007.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_not_runnable_here. Cause: trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:692:28:Failure::NotRunnableHere#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
   }
 }

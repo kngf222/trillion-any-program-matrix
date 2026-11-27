@@ -2,7 +2,7 @@
   "case": "limit-stdin-under",
   "label": "before",
   "card": "limit-stdin",
-  "date": "2026-11-27 01:10:50 CST",
+  "date": "2026-11-27 01:15:37 CST",
   "direct": {
     "argv": [
       "/usr/bin/python3",
@@ -10,7 +10,7 @@
     ],
     "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-stdin",
     "exit": 0,
-    "seconds": 0.05,
+    "seconds": 0.07,
     "worked": true,
     "stdout_bytes": 51,
     "last_json_line": {
@@ -22,22 +22,22 @@
   },
   "through_trillion": {
     "tool": "tool:limit-stdin",
-    "exit": 2,
-    "seconds": 0.18,
+    "exit": 1,
+    "seconds": 2.12,
     "worked": false,
-    "reference": null,
+    "reference": "dc547bf2-bdb1-4060-81a4-5ed97a88f43e",
     "stdout_bytes": 0,
     "stdout_tail": "",
-    "stderr": "The input file /Users/brianakhtar/dev/trillion-workshop/.git/scratch/matrix/limit-stdin-under-limit-stdin-before.json is 1048616 bytes; an input is at most 1048576.\n"
+    "stderr": "This computer does not offer \"use-this-computer-as-you\", which this tool needs, so it did not start. No computer asked offers it: f596fa0076f6c620. Reference: dc547bf2-bdb1-4060-81a4-5ed97a88f43e.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_capability_not_offered_here. Cause: trillion::tool_runs::tools::computer@src/tool_runs/tools/computer.rs:197:28:condition: capability_not_reported#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
   },
   "contained": {
     "tool": "tool:limit-stdin-contained",
-    "exit": 2,
-    "seconds": 0.16,
+    "exit": 1,
+    "seconds": 1.54,
     "worked": false,
-    "reference": null,
+    "reference": "a81e16e0-c470-4004-965d-a1359018d216",
     "stdout_bytes": 0,
     "stdout_tail": "",
-    "stderr": "The input file /Users/brianakhtar/dev/trillion-workshop/.git/scratch/matrix/limit-stdin-under-limit-stdin-contained-before.json is 1048626 bytes; an input is at most 1048576.\n"
+    "stderr": "This tool cannot run on this computer: it is another kind of tool, it needs a program that is not here, or it names a path outside its folder. Run it on a computer that has what it needs. Reference: a81e16e0-c470-4004-965d-a1359018d216.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_not_runnable_here. Cause: trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:692:28:Failure::NotRunnableHere#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
   }
 }

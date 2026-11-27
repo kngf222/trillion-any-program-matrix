@@ -62,6 +62,23 @@ for label in labels:
         out.append("| %s | %s | %s | %s | %s | %s |" % (name, how.replace("|", "/"), cell(r["direct"]), cell(r["through_trillion"]),
                                                           cell(r["contained"]), BEYOND.get(name, "none beyond the card")))
     out.append("")
+out += ["## Notes", "",
+        "- Install and list needed no step beyond the card: no package-files.json and no pinned-files.json were added. "
+        "`tools:update` accepted the pin (58 files first, 91 after the runs were added) and `tools:list` showed both cards of every program.",
+        "- Card refusal (before the new capability): every card is refused at `src/tool_runs/tools/computer.rs:197:28` with `capability_not_reported`, "
+        "naming `use-this-computer-as-you`. No program started.",
+        "- Contained card (capabilities `[]`): every one is refused at `src/tool_runs/tools/container.rs:692:28` with `Failure::NotRunnableHere`: "
+        "a contained run starts only programs it declares, inside its own folder, and the cards name a workdir and programs on this Mac outside it.",
+        "- The command line (`trillion op ... @FILE`) refuses an input file over 1048576 bytes before any engine sees it "
+        "(`The input file ... is 1048617 bytes; an input is at most 1048576.`). The stdin probe therefore builds the program's stdin from "
+        "the `pad` field twice plus `rest`, so the request file is about 524 KB and the stdin is exactly 1048576 (under) or 1048577 (over) bytes.",
+        "- Direct times are wall time on a Mac with a load average near 9 (other lanes were working); LuxTTS direct took 29 s to 51 s here "
+        "(its own report: load 3.7 s to 4.0 s, speak 10.4 s to 28.5 s), not the 7 s to 9 s measured on a quiet Mac. Its wav says "
+        "\"Trillion runs any program you already have.\" when read by mlx_whisper (whisper-base).",
+        "- The vault row's direct run sends the key only through a pipe. Through Trillion it is mounted from the vault by `credential_mounts`.",
+        "- Deno was not installed; `brew install deno` succeeded (deno 2.9.8, /opt/homebrew/bin/deno).",
+        "- `python-system` uses `/usr/bin/python3`, which on this Mac is Apple's Xcode python 3.9.6 (the author's plain `python3` is Anaconda's 3.10.9, covered by `conda-python`).",
+        ""]
 with open(ROOT + "/MATRIX.md", "w") as handle:
     handle.write("\n".join(out) + "\n")
 print("MATRIX.md written with", len(names), "cases")

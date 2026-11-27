@@ -216,7 +216,7 @@ def wav_check(path):
 
 def run_case(case, label):
     name = case["name"]
-    record = {"case": name, "label": label, "card": case["card"], "date": time.strftime("%Y-%m-%d %H:%M:%S %Z")}
+    record = {"case": name, "label": label, "card": case["card"], "date": time.strftime("%Y-%m-%d %H:%M:%S %Z"), "load_average_1_5_15": os.getloadavg()}
     record["direct"] = direct(case)
     trillion = through_trillion_server if case.get("special") == "server" else through_trillion
     record["through_trillion"] = trillion("tool:" + case["card"], case["input"], name, label)
