@@ -1,0 +1,45 @@
+{
+  "case": "mac-only",
+  "label": "before",
+  "card": "mac-only",
+  "date": "2026-11-27 01:10:43 CST",
+  "direct": {
+    "argv": [
+      "./run.sh"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/mac-only",
+    "exit": 0,
+    "seconds": 0.69,
+    "worked": true,
+    "stdout_bytes": 106,
+    "last_json_line": {
+      "program": "mac-only",
+      "product": "macOS",
+      "version": "26.4",
+      "kind": "Plain Text Document",
+      "osascript": "26.4"
+    },
+    "stdout_tail": "{\"program\":\"mac-only\",\"product\":\"macOS\",\"version\":\"26.4\",\"kind\":\"Plain Text Document\",\"osascript\":\"26.4\"}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:mac-only",
+    "exit": 1,
+    "seconds": 0.79,
+    "worked": false,
+    "reference": "39c4e149-5c92-481b-a642-0a315e1af179",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "This computer does not offer \"use-this-computer-as-you\", which this tool needs, so it did not start. No computer asked offers it: f596fa0076f6c620. Reference: 39c4e149-5c92-481b-a642-0a315e1af179.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_capability_not_offered_here. Cause: trillion::tool_runs::tools::computer@src/tool_runs/tools/computer.rs:197:28:condition: capability_not_reported#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
+  },
+  "contained": {
+    "tool": "tool:mac-only-contained",
+    "exit": 1,
+    "seconds": 0.71,
+    "worked": false,
+    "reference": "f24c38c7-5192-468d-930d-7a0ca2f390a9",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "This tool cannot run on this computer: it is another kind of tool, it needs a program that is not here, or it names a path outside its folder. Run it on a computer that has what it needs. Reference: f24c38c7-5192-468d-930d-7a0ca2f390a9.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_not_runnable_here. Cause: trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:692:28:Failure::NotRunnableHere#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
+  }
+}

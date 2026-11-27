@@ -1,0 +1,44 @@
+{
+  "case": "go-bin",
+  "label": "before",
+  "card": "go-bin",
+  "date": "2026-11-27 01:10:19 CST",
+  "direct": {
+    "argv": [
+      "./go-bin"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/go-bin",
+    "exit": 0,
+    "seconds": 0.05,
+    "worked": true,
+    "stdout_bytes": 133,
+    "last_json_line": {
+      "program": "go-bin",
+      "go": "go1.26.3",
+      "os": "darwin",
+      "exe": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/go-bin/go-bin"
+    },
+    "stdout_tail": "{\"program\":\"go-bin\",\"go\":\"go1.26.3\",\"os\":\"darwin\",\"exe\":\"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/go-bin/go-bin\"}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:go-bin",
+    "exit": 1,
+    "seconds": 0.83,
+    "worked": false,
+    "reference": "27a33f16-c08f-4a52-a5f5-05e45d219ef5",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "This computer does not offer \"use-this-computer-as-you\", which this tool needs, so it did not start. No computer asked offers it: f596fa0076f6c620. Reference: 27a33f16-c08f-4a52-a5f5-05e45d219ef5.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_capability_not_offered_here. Cause: trillion::tool_runs::tools::computer@src/tool_runs/tools/computer.rs:197:28:condition: capability_not_reported#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
+  },
+  "contained": {
+    "tool": "tool:go-bin-contained",
+    "exit": 1,
+    "seconds": 1.82,
+    "worked": false,
+    "reference": "c9bca414-b307-421a-be54-63ee45f10b5f",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "This tool cannot run on this computer: it is another kind of tool, it needs a program that is not here, or it names a path outside its folder. Run it on a computer that has what it needs. Reference: c9bca414-b307-421a-be54-63ee45f10b5f.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_not_runnable_here. Cause: trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:692:28:Failure::NotRunnableHere#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
+  }
+}

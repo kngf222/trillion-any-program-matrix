@@ -1,0 +1,45 @@
+{
+  "case": "bun-run",
+  "label": "before",
+  "card": "bun-run",
+  "date": "2026-11-27 01:09:01 CST",
+  "direct": {
+    "argv": [
+      "bun",
+      "main.ts"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/bun-run",
+    "exit": 0,
+    "seconds": 0.29,
+    "worked": true,
+    "stdout_bytes": 89,
+    "last_json_line": {
+      "program": "bun-run",
+      "bun": "1.4.0",
+      "execPath": "/Users/brianakhtar/.bun/bin/bun",
+      "sum": 6
+    },
+    "stdout_tail": "{\"program\":\"bun-run\",\"bun\":\"1.4.0\",\"execPath\":\"/Users/brianakhtar/.bun/bin/bun\",\"sum\":6}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:bun-run",
+    "exit": 1,
+    "seconds": 1.07,
+    "worked": false,
+    "reference": "63bc90a1-926a-4fac-be1d-ea252e679c71",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "This computer does not offer \"use-this-computer-as-you\", which this tool needs, so it did not start. No computer asked offers it: f596fa0076f6c620. Reference: 63bc90a1-926a-4fac-be1d-ea252e679c71.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_capability_not_offered_here. Cause: trillion::tool_runs::tools::computer@src/tool_runs/tools/computer.rs:197:28:condition: capability_not_reported#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
+  },
+  "contained": {
+    "tool": "tool:bun-run-contained",
+    "exit": 1,
+    "seconds": 0.63,
+    "worked": false,
+    "reference": "51859230-26e2-4457-9e24-ca2cc03f8b55",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "This tool cannot run on this computer: it is another kind of tool, it needs a program that is not here, or it names a path outside its folder. Run it on a computer that has what it needs. Reference: 51859230-26e2-4457-9e24-ca2cc03f8b55.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_not_runnable_here. Cause: trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:692:28:Failure::NotRunnableHere#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
+  }
+}

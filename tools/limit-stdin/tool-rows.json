@@ -10,8 +10,15 @@
         "input_schema": {
           "type": "object",
           "additionalProperties": false,
+          "required": [
+            "pad",
+            "rest"
+          ],
           "properties": {
             "pad": {
+              "type": "string"
+            },
+            "rest": {
               "type": "string"
             }
           }
@@ -28,8 +35,17 @@
           ],
           "stdout": "json",
           "stdin": {
-            "fill": {
-              "from": "input"
+            "a": {
+              "fill": {
+                "from": "input",
+                "field": "pad"
+              }
+            },
+            "b": {
+              "fill": {
+                "from": "input",
+                "field": "rest"
+              }
             }
           }
         },
@@ -52,8 +68,15 @@
         "input_schema": {
           "type": "object",
           "additionalProperties": false,
+          "required": [
+            "pad",
+            "rest"
+          ],
           "properties": {
             "pad": {
+              "type": "string"
+            },
+            "rest": {
               "type": "string"
             }
           }
@@ -68,8 +91,17 @@
           ],
           "stdout": "json",
           "stdin": {
-            "fill": {
-              "from": "input"
+            "a": {
+              "fill": {
+                "from": "input",
+                "field": "pad"
+              }
+            },
+            "b": {
+              "fill": {
+                "from": "input",
+                "field": "rest"
+              }
             }
           }
         },

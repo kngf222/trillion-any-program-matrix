@@ -1,0 +1,43 @@
+{
+  "case": "limit-read-dirs-9",
+  "label": "before",
+  "card": "limit-read-dirs-9",
+  "date": "2026-11-27 01:11:01 CST",
+  "direct": {
+    "argv": [
+      "/opt/homebrew/anaconda3/bin/python",
+      "main.py"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-read-dirs",
+    "exit": 0,
+    "seconds": 0.06,
+    "worked": true,
+    "stdout_bytes": 43,
+    "last_json_line": {
+      "program": "limit-read-dirs",
+      "ok": true
+    },
+    "stdout_tail": "{\"program\": \"limit-read-dirs\", \"ok\": true}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:limit-read-dirs-9",
+    "exit": 1,
+    "seconds": 0.89,
+    "worked": false,
+    "reference": "8f24eab5-5bf0-460e-a77d-65dee047a58c",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "This computer does not offer \"use-this-computer-as-you\", which this tool needs, so it did not start. No computer asked offers it: f596fa0076f6c620. Reference: 8f24eab5-5bf0-460e-a77d-65dee047a58c.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_capability_not_offered_here. Cause: trillion::tool_runs::tools::computer@src/tool_runs/tools/computer.rs:197:28:condition: capability_not_reported#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
+  },
+  "contained": {
+    "tool": "tool:limit-read-dirs-9-contained",
+    "exit": 1,
+    "seconds": 0.71,
+    "worked": false,
+    "reference": "ab39cdaa-9c31-4d07-83ae-8e13374ca7e4",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "The input is not the shape this tool declares, or it names two credentials for one place, so the tool did not start. tools:list {tool: ID} answers the tool's input_schema: send its input in `input`, matching that schema, and name one credential for each place. Reference: ab39cdaa-9c31-4d07-83ae-8e13374ca7e4.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_run_input_refused. Cause: trillion::tool_runs::tools@src/tool_runs/tools.rs:560:20:Failure::Invalid#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
+  }
+}

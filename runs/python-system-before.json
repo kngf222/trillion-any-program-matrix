@@ -1,0 +1,45 @@
+{
+  "case": "python-system",
+  "label": "before",
+  "card": "python-system",
+  "date": "2026-11-27 01:09:06 CST",
+  "direct": {
+    "argv": [
+      "/usr/bin/python3",
+      "main.py"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/python-system",
+    "exit": 0,
+    "seconds": 0.04,
+    "worked": true,
+    "stdout_bytes": 231,
+    "last_json_line": {
+      "program": "python-system",
+      "version": "3.9.6",
+      "executable": "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "prefix": "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9"
+    },
+    "stdout_tail": "{\"program\": \"python-system\", \"version\": \"3.9.6\", \"executable\": \"/Applications/Xcode.app/Contents/Developer/usr/bin/python3\", \"prefix\": \"/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9\"}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:python-system",
+    "exit": 1,
+    "seconds": 0.82,
+    "worked": false,
+    "reference": "d6e7fa56-1ba3-48d2-a5a1-ecfd836cfa00",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "This computer does not offer \"use-this-computer-as-you\", which this tool needs, so it did not start. No computer asked offers it: f596fa0076f6c620. Reference: d6e7fa56-1ba3-48d2-a5a1-ecfd836cfa00.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_capability_not_offered_here. Cause: trillion::tool_runs::tools::computer@src/tool_runs/tools/computer.rs:197:28:condition: capability_not_reported#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
+  },
+  "contained": {
+    "tool": "tool:python-system-contained",
+    "exit": 1,
+    "seconds": 0.97,
+    "worked": false,
+    "reference": "09caa76f-942d-436e-a47a-849ea65598dd",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "This tool cannot run on this computer: it is another kind of tool, it needs a program that is not here, or it names a path outside its folder. Run it on a computer that has what it needs. Reference: 09caa76f-942d-436e-a47a-849ea65598dd.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_not_runnable_here. Cause: trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:692:28:Failure::NotRunnableHere#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
+  }
+}

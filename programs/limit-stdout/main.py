@@ -1,8 +1,12 @@
 import json, sys
 n = int(sys.argv[1])
-w = sys.stdout.write
+line = json.dumps({"program": "limit-stdout", "total_bytes": n}) + "\n"
+filler = n - len(line)
+out = sys.stdout
 chunk = "x" * 1023 + "\n"
-total = 0
-while total + 1024 <= n - 80:
-    w(chunk); total += 1024
-w(json.dumps({"program": "limit-stdout", "filler_bytes": total}) + "\n")
+while filler >= 1024:
+    out.write(chunk)
+    filler -= 1024
+if filler > 0:
+    out.write("y" * (filler - 1) + "\n")
+out.write(line)

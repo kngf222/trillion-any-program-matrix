@@ -1,0 +1,43 @@
+{
+  "case": "limit-stdin-under",
+  "label": "before",
+  "card": "limit-stdin",
+  "date": "2026-11-27 01:10:50 CST",
+  "direct": {
+    "argv": [
+      "/usr/bin/python3",
+      "main.py"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-stdin",
+    "exit": 0,
+    "seconds": 0.05,
+    "worked": true,
+    "stdout_bytes": 51,
+    "last_json_line": {
+      "program": "limit-stdin",
+      "stdin_bytes": 1048576
+    },
+    "stdout_tail": "{\"program\": \"limit-stdin\", \"stdin_bytes\": 1048576}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:limit-stdin",
+    "exit": 2,
+    "seconds": 0.18,
+    "worked": false,
+    "reference": null,
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "The input file /Users/brianakhtar/dev/trillion-workshop/.git/scratch/matrix/limit-stdin-under-limit-stdin-before.json is 1048616 bytes; an input is at most 1048576.\n"
+  },
+  "contained": {
+    "tool": "tool:limit-stdin-contained",
+    "exit": 2,
+    "seconds": 0.16,
+    "worked": false,
+    "reference": null,
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "The input file /Users/brianakhtar/dev/trillion-workshop/.git/scratch/matrix/limit-stdin-under-limit-stdin-contained-before.json is 1048626 bytes; an input is at most 1048576.\n"
+  }
+}

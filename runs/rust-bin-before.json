@@ -1,0 +1,44 @@
+{
+  "case": "rust-bin",
+  "label": "before",
+  "card": "rust-bin",
+  "date": "2026-11-27 01:10:17 CST",
+  "direct": {
+    "argv": [
+      "./target/release/rust-bin"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/rust-bin",
+    "exit": 0,
+    "seconds": 0.03,
+    "worked": true,
+    "stdout_bytes": 154,
+    "last_json_line": {
+      "program": "rust-bin",
+      "os": "macos",
+      "arch": "aarch64",
+      "exe": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/rust-bin/target/release/rust-bin"
+    },
+    "stdout_tail": "{\"program\":\"rust-bin\",\"os\":\"macos\",\"arch\":\"aarch64\",\"exe\":\"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/rust-bin/target/release/rust-bin\"}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:rust-bin",
+    "exit": 1,
+    "seconds": 0.72,
+    "worked": false,
+    "reference": "8cbc2189-ff39-409d-9187-8244bca97088",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "This computer does not offer \"use-this-computer-as-you\", which this tool needs, so it did not start. No computer asked offers it: f596fa0076f6c620. Reference: 8cbc2189-ff39-409d-9187-8244bca97088.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_capability_not_offered_here. Cause: trillion::tool_runs::tools::computer@src/tool_runs/tools/computer.rs:197:28:condition: capability_not_reported#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
+  },
+  "contained": {
+    "tool": "tool:rust-bin-contained",
+    "exit": 1,
+    "seconds": 0.99,
+    "worked": false,
+    "reference": "e9535213-992d-474f-b41b-6e3411c35e89",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "This tool cannot run on this computer: it is another kind of tool, it needs a program that is not here, or it names a path outside its folder. Run it on a computer that has what it needs. Reference: e9535213-992d-474f-b41b-6e3411c35e89.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_not_runnable_here. Cause: trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:692:28:Failure::NotRunnableHere#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "case": "docker-alpine",
+  "label": "before",
+  "card": "docker-alpine",
+  "date": "2026-11-27 01:10:45 CST",
+  "direct": {
+    "argv": [
+      "./run.sh"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/docker-alpine",
+    "exit": 0,
+    "seconds": 1.97,
+    "worked": true,
+    "stdout_bytes": 107,
+    "last_json_line": {
+      "program": "docker-alpine",
+      "kernel": "Linux 7.2.12-orbstack-00394-gbecdd6130068",
+      "os": "Alpine Linux v3.24"
+    },
+    "stdout_tail": "{\"program\":\"docker-alpine\",\"kernel\":\"Linux 7.2.12-orbstack-00394-gbecdd6130068\",\"os\":\"Alpine Linux v3.24\"}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:docker-alpine",
+    "exit": 1,
+    "seconds": 1.2,
+    "worked": false,
+    "reference": "cd4a8500-b45f-4516-badc-651070634038",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "This computer does not offer \"use-this-computer-as-you\", which this tool needs, so it did not start. No computer asked offers it: f596fa0076f6c620. Reference: cd4a8500-b45f-4516-badc-651070634038.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_capability_not_offered_here. Cause: trillion::tool_runs::tools::computer@src/tool_runs/tools/computer.rs:197:28:condition: capability_not_reported#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
+  },
+  "contained": {
+    "tool": "tool:docker-alpine-contained",
+    "exit": 1,
+    "seconds": 0.91,
+    "worked": false,
+    "reference": "2b73f3d2-11bb-4466-91b8-9a41e0f59760",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "This tool cannot run on this computer: it is another kind of tool, it needs a program that is not here, or it names a path outside its folder. Run it on a computer that has what it needs. Reference: 2b73f3d2-11bb-4466-91b8-9a41e0f59760.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_not_runnable_here. Cause: trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:692:28:Failure::NotRunnableHere#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
+  }
+}

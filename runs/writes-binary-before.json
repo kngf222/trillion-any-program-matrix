@@ -1,0 +1,47 @@
+{
+  "case": "writes-binary",
+  "label": "before",
+  "card": "writes-binary",
+  "date": "2026-11-27 01:10:28 CST",
+  "direct": {
+    "argv": [
+      "/usr/bin/python3",
+      "main.py",
+      "/Users/brianakhtar/dev/trillion-workshop/.git/scratch/matrix/png-direct-before.png"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/writes-binary",
+    "exit": 0,
+    "seconds": 0.09,
+    "worked": true,
+    "stdout_bytes": 219,
+    "last_json_line": {
+      "program": "writes-binary",
+      "out_file": "/Users/brianakhtar/dev/trillion-workshop/.git/scratch/matrix/png-direct-before.png",
+      "bytes": 463,
+      "sha256": "0115e89c5e931d3ceca2f128f76e6c00633876ebb9a9abc20968d88c43eee5ce"
+    },
+    "stdout_tail": "{\"program\": \"writes-binary\", \"out_file\": \"/Users/brianakhtar/dev/trillion-workshop/.git/scratch/matrix/png-direct-before.png\", \"bytes\": 463, \"sha256\": \"0115e89c5e931d3ceca2f128f76e6c00633876ebb9a9abc20968d88c43eee5ce\"}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:writes-binary",
+    "exit": 1,
+    "seconds": 0.66,
+    "worked": false,
+    "reference": "a48b35e9-5358-444f-b91b-0459eea9a55c",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "This computer does not offer \"use-this-computer-as-you\", which this tool needs, so it did not start. No computer asked offers it: f596fa0076f6c620. Reference: a48b35e9-5358-444f-b91b-0459eea9a55c.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_capability_not_offered_here. Cause: trillion::tool_runs::tools::computer@src/tool_runs/tools/computer.rs:197:28:condition: capability_not_reported#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n",
+    "file_exists": false
+  },
+  "contained": {
+    "tool": "tool:writes-binary-contained",
+    "exit": 1,
+    "seconds": 3.07,
+    "worked": false,
+    "reference": "7b03ff35-53ed-4f43-9f9b-865ccde5578c",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "This tool cannot run on this computer: it is another kind of tool, it needs a program that is not here, or it names a path outside its folder. Run it on a computer that has what it needs. Reference: 7b03ff35-53ed-4f43-9f9b-865ccde5578c.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_not_runnable_here. Cause: trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:692:28:Failure::NotRunnableHere#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
+  }
+}

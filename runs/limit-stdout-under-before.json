@@ -1,0 +1,44 @@
+{
+  "case": "limit-stdout-under",
+  "label": "before",
+  "card": "limit-stdout",
+  "date": "2026-11-27 01:10:51 CST",
+  "direct": {
+    "argv": [
+      "/usr/bin/python3",
+      "main.py",
+      "33554431"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-stdout",
+    "exit": 0,
+    "seconds": 0.05,
+    "worked": true,
+    "stdout_bytes": 33554431,
+    "last_json_line": {
+      "program": "limit-stdout",
+      "total_bytes": 33554431
+    },
+    "stdout_tail": "[33554431 bytes, last 600]\nyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy\n{\"program\": \"limit-stdout\", \"total_bytes\": 33554431}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:limit-stdout",
+    "exit": 1,
+    "seconds": 2.4,
+    "worked": false,
+    "reference": "6352d14e-7e47-400d-ac7e-43f99f94eab5",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "This computer does not offer \"use-this-computer-as-you\", which this tool needs, so it did not start. No computer asked offers it: f596fa0076f6c620. Reference: 6352d14e-7e47-400d-ac7e-43f99f94eab5.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_capability_not_offered_here. Cause: trillion::tool_runs::tools::computer@src/tool_runs/tools/computer.rs:197:28:condition: capability_not_reported#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
+  },
+  "contained": {
+    "tool": "tool:limit-stdout-contained",
+    "exit": 1,
+    "seconds": 0.9,
+    "worked": false,
+    "reference": "b49b6090-88b4-49c6-819e-989fcdcf8820",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "This tool cannot run on this computer: it is another kind of tool, it needs a program that is not here, or it names a path outside its folder. Run it on a computer that has what it needs. Reference: b49b6090-88b4-49c6-819e-989fcdcf8820.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_not_runnable_here. Cause: trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:692:28:Failure::NotRunnableHere#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
+  }
+}

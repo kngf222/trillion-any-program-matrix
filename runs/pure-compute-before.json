@@ -1,0 +1,45 @@
+{
+  "case": "pure-compute",
+  "label": "before",
+  "card": "pure-compute",
+  "date": "2026-11-27 01:10:39 CST",
+  "direct": {
+    "argv": [
+      "/usr/bin/python3",
+      "main.py",
+      "30"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/pure-compute",
+    "exit": 0,
+    "seconds": 0.05,
+    "worked": true,
+    "stdout_bytes": 52,
+    "last_json_line": {
+      "program": "pure-compute",
+      "n": 30,
+      "fib": 832040
+    },
+    "stdout_tail": "{\"program\": \"pure-compute\", \"n\": 30, \"fib\": 832040}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:pure-compute",
+    "exit": 1,
+    "seconds": 0.76,
+    "worked": false,
+    "reference": "d0a8929d-fcb4-4d10-9461-5bcdc20e31e5",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "This computer does not offer \"use-this-computer-as-you\", which this tool needs, so it did not start. No computer asked offers it: f596fa0076f6c620. Reference: d0a8929d-fcb4-4d10-9461-5bcdc20e31e5.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_capability_not_offered_here. Cause: trillion::tool_runs::tools::computer@src/tool_runs/tools/computer.rs:197:28:condition: capability_not_reported#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
+  },
+  "contained": {
+    "tool": "tool:pure-compute-contained",
+    "exit": 1,
+    "seconds": 3.62,
+    "worked": false,
+    "reference": "1f662219-9413-4e9d-b7de-1ba4211852a2",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "This tool cannot run on this computer: it is another kind of tool, it needs a program that is not here, or it names a path outside its folder. Run it on a computer that has what it needs. Reference: 1f662219-9413-4e9d-b7de-1ba4211852a2.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_not_runnable_here. Cause: trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:692:28:Failure::NotRunnableHere#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
+  }
+}

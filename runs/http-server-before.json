@@ -1,0 +1,44 @@
+{
+  "case": "http-server",
+  "label": "before",
+  "card": "http-server",
+  "date": "2026-11-27 01:10:32 CST",
+  "direct": {
+    "argv": [
+      "node",
+      "main.mjs",
+      "47392"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/http-server",
+    "exit": 0,
+    "seconds": 0.1,
+    "worked": true,
+    "last_json_line": {
+      "program": "http-server",
+      "listening": 47392,
+      "pid": 74181
+    },
+    "http_reply": "hello from http-server\n",
+    "stdout_tail": "{\"program\":\"http-server\",\"listening\":47392,\"pid\":74181}\n"
+  },
+  "through_trillion": {
+    "tool": "tool:http-server",
+    "exit": 1,
+    "seconds": 0.8,
+    "worked": false,
+    "reference": "9376baef-b205-4ae3-97fe-c8596724cd93",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "This computer does not offer \"use-this-computer-as-you\", which this tool needs, so it did not start. No computer asked offers it: f596fa0076f6c620. Reference: 9376baef-b205-4ae3-97fe-c8596724cd93.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_capability_not_offered_here. Cause: trillion::tool_runs::tools::computer@src/tool_runs/tools/computer.rs:197:28:condition: capability_not_reported#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
+  },
+  "contained": {
+    "tool": "tool:http-server-contained",
+    "exit": 1,
+    "seconds": 0.76,
+    "worked": false,
+    "reference": "2a551804-39c2-4562-abde-6c9923a2df6a",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "This tool cannot run on this computer: it is another kind of tool, it needs a program that is not here, or it names a path outside its folder. Run it on a computer that has what it needs. Reference: 2a551804-39c2-4562-abde-6c9923a2df6a.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_not_runnable_here. Cause: trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:692:28:Failure::NotRunnableHere#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "case": "uv-project",
+  "label": "before",
+  "card": "uv-project",
+  "date": "2026-11-27 01:09:15 CST",
+  "direct": {
+    "argv": [
+      "uv",
+      "run",
+      "main.py"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/uv-project",
+    "exit": 0,
+    "seconds": 1.34,
+    "worked": true,
+    "stdout_bytes": 244,
+    "last_json_line": {
+      "program": "uv-project",
+      "prefix": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/uv-project/.venv",
+      "executable": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/uv-project/.venv/bin/python3",
+      "tabulate": "0.10.0"
+    },
+    "stdout_tail": "{\"program\": \"uv-project\", \"prefix\": \"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/uv-project/.venv\", \"executable\": \"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/uv-project/.venv/bin/python3\", \"tabulate\": \"0.10.0\"}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:uv-project",
+    "exit": 1,
+    "seconds": 0.88,
+    "worked": false,
+    "reference": "5d8de5c3-3cac-4814-ba8c-5ffd3d637740",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "This computer does not offer \"use-this-computer-as-you\", which this tool needs, so it did not start. No computer asked offers it: f596fa0076f6c620. Reference: 5d8de5c3-3cac-4814-ba8c-5ffd3d637740.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_capability_not_offered_here. Cause: trillion::tool_runs::tools::computer@src/tool_runs/tools/computer.rs:197:28:condition: capability_not_reported#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
+  },
+  "contained": {
+    "tool": "tool:uv-project-contained",
+    "exit": 1,
+    "seconds": 3.06,
+    "worked": false,
+    "reference": "8e789b33-2b9f-4577-93e5-7e12e6f11854",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "This tool cannot run on this computer: it is another kind of tool, it needs a program that is not here, or it names a path outside its folder. Run it on a computer that has what it needs. Reference: 8e789b33-2b9f-4577-93e5-7e12e6f11854.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_not_runnable_here. Cause: trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:692:28:Failure::NotRunnableHere#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
+  }
+}

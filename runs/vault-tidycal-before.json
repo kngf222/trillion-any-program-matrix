@@ -1,0 +1,49 @@
+{
+  "case": "vault-tidycal",
+  "label": "before",
+  "card": "vault-tidycal",
+  "date": "2026-11-27 01:10:34 CST",
+  "direct": {
+    "argv": [
+      "sh",
+      "/Users/brianakhtar/dev/trillion-apps/scripts/read-a-held-value.sh",
+      "read",
+      "tidycal-api-token",
+      "|",
+      "sh",
+      "-c",
+      "TIDYCAL_API_TOKEN=$(cat) exec node list.mjs"
+    ],
+    "cwd": "/Users/brianakhtar/dev/try-a-plain-tool-with-a-key/tools/list-my-booking-types",
+    "exit": 0,
+    "seconds": 0.68,
+    "worked": true,
+    "stdout_bytes": 33,
+    "last_json_line": {
+      "status": 200,
+      "booking_types": 3
+    },
+    "stdout_tail": "{\"status\":200,\"booking_types\":3}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:vault-tidycal",
+    "exit": 1,
+    "seconds": 0.76,
+    "worked": false,
+    "reference": "5d5514cb-4992-4e77-8c79-49f35f67a506",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "This computer does not offer \"use-this-computer-as-you\", which this tool needs, so it did not start. No computer asked offers it: f596fa0076f6c620. Reference: 5d5514cb-4992-4e77-8c79-49f35f67a506.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_capability_not_offered_here. Cause: trillion::tool_runs::tools::computer@src/tool_runs/tools/computer.rs:197:28:condition: capability_not_reported#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
+  },
+  "contained": {
+    "tool": "tool:vault-tidycal-contained",
+    "exit": 1,
+    "seconds": 0.77,
+    "worked": false,
+    "reference": "ad842239-4c50-41ee-8d5e-89babadcbe86",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "This tool cannot run on this computer: it is another kind of tool, it needs a program that is not here, or it names a path outside its folder. Run it on a computer that has what it needs. Reference: ad842239-4c50-41ee-8d5e-89babadcbe86.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_not_runnable_here. Cause: trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:692:28:Failure::NotRunnableHere#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
+  }
+}

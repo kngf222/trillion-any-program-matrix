@@ -1,0 +1,56 @@
+{
+  "case": "luxtts-voice",
+  "label": "before",
+  "card": "luxtts-voice",
+  "date": "2026-11-27 01:09:21 CST",
+  "direct": {
+    "argv": [
+      "/Users/brianakhtar/dev/LuxTTS/.venv/bin/python",
+      "/Users/brianakhtar/dev/trillion-wrap-luxtts/tools/say-words-in-a-voice/say.py"
+    ],
+    "cwd": "/Users/brianakhtar/dev/LuxTTS",
+    "exit": 0,
+    "seconds": 51.31,
+    "worked": true,
+    "stdout_bytes": 159,
+    "last_json_line": {
+      "out_file": "/Users/brianakhtar/dev/trillion-workshop/.git/scratch/matrix/lux-direct-before.wav",
+      "seconds_of_audio": 2.23,
+      "load_s": 4.03,
+      "speak_s": 28.49
+    },
+    "stdout_tail": "{\"out_file\": \"/Users/brianakhtar/dev/trillion-workshop/.git/scratch/matrix/lux-direct-before.wav\", \"seconds_of_audio\": 2.23, \"load_s\": 4.03, \"speak_s\": 28.49}\n",
+    "stderr_tail": "WARNING:root:Failed import k2 with error No module named 'k2'. Swoosh functions will fallback to PyTorch implementation, leading to slower speed and higher memory consumption.\nDevice set to use mps\nLoading model on GPU\n`return_token_timestamps` is deprecated for WhisperFeatureExtractor and will be removed in Transformers v5. Use `return_attention_mask` instead, as the number of frames can be inferred from it.\nUsing custom `forced_decoder_ids` from the (generation) config. This is deprecated in favor of the `task` and `language` flags/config options.\nTranscription using a multilingual Whisper will default to language detection followed by transcription instead of translation to English. This might be a breaking change for your use case. If you want to instead always translate your audio to English, make sure to pass `language='en'`. See https://github.com/huggingface/transformers/pull/28687 for more details.\n Keep using Clawed, Chat GBT or any AI you like.\n/Users/brianakhtar/dev/LuxTTS/.venv/lib/python3.10/site-packages/linacodec/vocoder/vocos.py:132: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.\n  with autocast(enabled=False):\n",
+    "wav": {
+      "file": "/Users/brianakhtar/dev/trillion-workshop/.git/scratch/matrix/lux-direct-before.wav",
+      "exists": true,
+      "bytes": 214060,
+      "seconds_of_audio": 2.229333,
+      "speech_to_text": "Trillion runs any program you already have."
+    }
+  },
+  "through_trillion": {
+    "tool": "tool:luxtts-voice",
+    "exit": 1,
+    "seconds": 0.82,
+    "worked": false,
+    "reference": "f13e4e31-45fb-48e7-8795-084e5ff67694",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "This computer does not offer \"use-this-computer-as-you\", which this tool needs, so it did not start. No computer asked offers it: f596fa0076f6c620. Reference: f13e4e31-45fb-48e7-8795-084e5ff67694.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_capability_not_offered_here. Cause: trillion::tool_runs::tools::computer@src/tool_runs/tools/computer.rs:197:28:condition: capability_not_reported#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n",
+    "wav": {
+      "file": "/Users/brianakhtar/dev/trillion-workshop/.git/scratch/matrix/lux-before.wav",
+      "exists": false
+    }
+  },
+  "contained": {
+    "tool": "tool:luxtts-voice-contained",
+    "exit": 1,
+    "seconds": 0.73,
+    "worked": false,
+    "reference": "67bfdaa5-1a6d-4e41-ab79-dc6a59e7fab2",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "This tool cannot run on this computer: it is another kind of tool, it needs a program that is not here, or it names a path outside its folder. Run it on a computer that has what it needs. Reference: 67bfdaa5-1a6d-4e41-ab79-dc6a59e7fab2.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_not_runnable_here. Cause: trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:692:28:Failure::NotRunnableHere#263d27e9718b797c73f084f0c705f7ba9a0c76bb\n"
+  }
+}
