@@ -1,0 +1,48 @@
+{
+  "case": "limit-stdin-under",
+  "label": "placed-0909",
+  "card": "limit-stdin",
+  "date": "2026-11-28 04:51:30 CST",
+  "load_average_1_5_15": [
+    29.52490234375,
+    24.13818359375,
+    21.4677734375
+  ],
+  "direct": {
+    "argv": [
+      "/usr/bin/python3",
+      "main.py"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-stdin",
+    "exit": 0,
+    "seconds": 0.2,
+    "worked": true,
+    "stdout_bytes": 51,
+    "last_json_line": {
+      "program": "limit-stdin",
+      "stdin_bytes": 1048576
+    },
+    "stdout_tail": "{\"program\": \"limit-stdin\", \"stdin_bytes\": 1048576}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:limit-stdin",
+    "exit": 0,
+    "seconds": 2.96,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 288,
+    "stdout_tail": "{\n  \"exit_code\": 0,\n  \"replayed\": false,\n  \"result\": {\n    \"exit_code\": 0,\n    \"result\": {\n      \"program\": \"limit-stdin\",\n      \"stdin_bytes\": 1048576\n    },\n    \"stderr\": \"\",\n    \"stdout\": \"{\\\"program\\\": \\\"limit-stdin\\\", \\\"stdin_bytes\\\": 1048576}\\n\"\n  },\n  \"tool\": \"tool:limit-stdin\"\n}\n",
+    "stderr": ""
+  },
+  "contained": {
+    "tool": "tool:limit-stdin-contained",
+    "exit": 0,
+    "seconds": 2.05,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 729,
+    "stdout_tail": "{\n  \"cause\": \"trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:1036:21:condition: process_exit_unsuccessful#cdcfa4c8023e288089792d8d2fee812f3d0ccecf\",\n  \"error\": \"xcrun: error: unable to load libxcrun (dlopen(/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib, 0x0005): tried: '/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib' (file system sandbox blocked open()), '/System/Volumes/Preboot/Cryptexes/OS/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib' (no such file), '/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib' (file system sandbox blocked open())).\",\n  \"exit_code\": 1,\n  \"replayed\": false,\n  \"tool\": \"tool:limit-stdin-contained\"\n}\n",
+    "stderr": ""
+  }
+}

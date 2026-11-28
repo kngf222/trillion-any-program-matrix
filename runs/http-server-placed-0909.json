@@ -1,0 +1,62 @@
+{
+  "case": "http-server",
+  "label": "placed-0909",
+  "card": "http-server",
+  "date": "2026-11-28 04:50:43 CST",
+  "load_average_1_5_15": [
+    28.060546875,
+    23.0576171875,
+    20.96337890625
+  ],
+  "direct": {
+    "argv": [
+      "node",
+      "main.mjs",
+      "47392"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/http-server",
+    "exit": 0,
+    "seconds": 0.37,
+    "worked": true,
+    "last_json_line": {
+      "program": "http-server",
+      "listening": 47392,
+      "pid": 23880
+    },
+    "http_reply": "hello from http-server\n",
+    "stdout_tail": "{\"program\":\"http-server\",\"listening\":47392,\"pid\":23880}\n"
+  },
+  "through_trillion": {
+    "tool": "tool:http-server",
+    "exit": 0,
+    "seconds": 1.33,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 260,
+    "stdout_tail": "{\n  \"crashes\": 0,\n  \"ended\": null,\n  \"incarnations\": 0,\n  \"keep_open\": true,\n  \"replayed\": false,\n  \"run\": \"40f0af66-ad9c-4746-bb90-63a9fe77d930\",\n  \"started_at\": \"2026-11-28T10:50:44.872Z\",\n  \"state\": \"running\",\n  \"tool\": \"tool:http-server\",\n  \"written\": 0\n}\n",
+    "stderr": "",
+    "session_run": "40f0af66-ad9c-4746-bb90-63a9fe77d930",
+    "read": {
+      "exit": 0,
+      "seconds": 1.02,
+      "stdout": "{\n  \"crashes\": 0,\n  \"dropped\": false,\n  \"ended\": null,\n  \"from\": 0,\n  \"incarnations\": 1,\n  \"keep_open\": true,\n  \"next\": 56,\n  \"run\": \"40f0af66-ad9c-4746-bb90-63a9fe77d930\",\n  \"started_at\": \"2026-11-28T10:50:44.872Z\",\n  \"state\": \"running\",\n  \"text\": \"{\\\"program\\\":\\\"http-server\\\",\\\"listening\\\":47391,\\\"pid\\\":24213}\\n\",\n  \"tool\": \"tool:http-server\",\n  \"written\": 56\n}\n",
+      "stderr": ""
+    },
+    "cancel": {
+      "exit": 0,
+      "seconds": 0.78,
+      "stdout": "{\n  \"cancelled\": true\n}\n",
+      "stderr": ""
+    }
+  },
+  "contained": {
+    "tool": "tool:http-server-contained",
+    "exit": 0,
+    "seconds": 0.9,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 270,
+    "stdout_tail": "{\n  \"crashes\": 0,\n  \"ended\": null,\n  \"incarnations\": 0,\n  \"keep_open\": true,\n  \"replayed\": false,\n  \"run\": \"88d96980-a81b-450b-9773-1884e6c9fb40\",\n  \"started_at\": \"2026-11-28T10:50:49.683Z\",\n  \"state\": \"running\",\n  \"tool\": \"tool:http-server-contained\",\n  \"written\": 0\n}\n",
+    "stderr": ""
+  }
+}

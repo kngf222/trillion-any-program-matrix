@@ -1,0 +1,49 @@
+{
+  "case": "limit-duration-over",
+  "label": "placed-0909",
+  "card": "limit-duration",
+  "date": "2026-11-28 04:53:03 CST",
+  "load_average_1_5_15": [
+    23.5322265625,
+    24.02978515625,
+    21.72265625
+  ],
+  "direct": {
+    "argv": [
+      "/usr/bin/python3",
+      "main.py",
+      "125"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-duration",
+    "exit": 0,
+    "seconds": 126.15,
+    "worked": true,
+    "stdout_bytes": 48,
+    "last_json_line": {
+      "program": "limit-duration",
+      "slept_s": 125.0
+    },
+    "stdout_tail": "{\"program\": \"limit-duration\", \"slept_s\": 125.0}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:limit-duration",
+    "exit": 1,
+    "seconds": 123.16,
+    "worked": false,
+    "reference": "3f693c3d-47b8-4b6a-81fb-2c2aaf09e2cf",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "The tool was stopped: it ran past its time limit (the row's invoke.max_run_ms, else this computer's deadline_ms in tool-runs.json, never past run_ceiling_ms; a caller's until only shortens it). Give the row a longer invoke.max_run_ms, or ask with a later until. It started 2026-11-28T10:55:12Z and was stopped after 120 s; what it did before is not known. This request key answers this again and never runs the tool twice; to run it again, use a new key. Reference: 3f693c3d-47b8-4b6a-81fb-2c2aaf09e2cf. To ask again without doing it twice, add --request-key 3f693c3d-47b8-4b6a-81fb-2c2aaf09e2cf to the command.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_run_outcome_kept. Cause: trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:996:59:condition: outcome_kept#cdcfa4c8023e288089792d8d2fee812f3d0ccecf\n"
+  },
+  "contained": {
+    "tool": "tool:limit-duration-contained",
+    "exit": 0,
+    "seconds": 2.91,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 732,
+    "stdout_tail": "{\n  \"cause\": \"trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:1036:21:condition: process_exit_unsuccessful#cdcfa4c8023e288089792d8d2fee812f3d0ccecf\",\n  \"error\": \"xcrun: error: unable to load libxcrun (dlopen(/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib, 0x0005): tried: '/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib' (file system sandbox blocked open()), '/System/Volumes/Preboot/Cryptexes/OS/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib' (no such file), '/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib' (file system sandbox blocked open())).\",\n  \"exit_code\": 1,\n  \"replayed\": false,\n  \"tool\": \"tool:limit-duration-contained\"\n}\n",
+    "stderr": ""
+  }
+}

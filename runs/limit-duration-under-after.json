@@ -1,0 +1,49 @@
+{
+  "case": "limit-duration-under",
+  "label": "after",
+  "card": "limit-duration",
+  "date": "2026-11-28 00:25:23 CST",
+  "load_average_1_5_15": [
+    10.4677734375,
+    11.873046875,
+    8.76806640625
+  ],
+  "direct": {
+    "argv": [
+      "/usr/bin/python3",
+      "main.py",
+      "115"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-duration",
+    "exit": 0,
+    "seconds": 115.03,
+    "worked": true,
+    "stdout_bytes": 48,
+    "last_json_line": {
+      "program": "limit-duration",
+      "slept_s": 115.0
+    },
+    "stdout_tail": "{\"program\": \"limit-duration\", \"slept_s\": 115.0}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:limit-duration",
+    "exit": 0,
+    "seconds": 115.69,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 283,
+    "stdout_tail": "{\n  \"exit_code\": 0,\n  \"replayed\": false,\n  \"result\": {\n    \"exit_code\": 0,\n    \"result\": {\n      \"program\": \"limit-duration\",\n      \"slept_s\": 115\n    },\n    \"stderr\": \"\",\n    \"stdout\": \"{\\\"program\\\": \\\"limit-duration\\\", \\\"slept_s\\\": 115.0}\\n\"\n  },\n  \"tool\": \"tool:limit-duration\"\n}\n",
+    "stderr": ""
+  },
+  "contained": {
+    "tool": "tool:limit-duration-contained",
+    "exit": 0,
+    "seconds": 0.86,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 732,
+    "stdout_tail": "{\n  \"cause\": \"trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:1031:21:condition: process_exit_unsuccessful#90f192712e761b8570fdb84bda3187c3db4fe1f1\",\n  \"error\": \"xcrun: error: unable to load libxcrun (dlopen(/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib, 0x0005): tried: '/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib' (file system sandbox blocked open()), '/System/Volumes/Preboot/Cryptexes/OS/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib' (no such file), '/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib' (file system sandbox blocked open())).\",\n  \"exit_code\": 1,\n  \"replayed\": false,\n  \"tool\": \"tool:limit-duration-contained\"\n}\n",
+    "stderr": ""
+  }
+}

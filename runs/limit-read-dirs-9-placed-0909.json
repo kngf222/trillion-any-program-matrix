@@ -1,0 +1,48 @@
+{
+  "case": "limit-read-dirs-9",
+  "label": "placed-0909",
+  "card": "limit-read-dirs-9",
+  "date": "2026-11-28 04:52:55 CST",
+  "load_average_1_5_15": [
+    24.53662109375,
+    24.23291015625,
+    21.7802734375
+  ],
+  "direct": {
+    "argv": [
+      "/opt/homebrew/anaconda3/bin/python",
+      "main.py"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-read-dirs",
+    "exit": 0,
+    "seconds": 0.32,
+    "worked": true,
+    "stdout_bytes": 43,
+    "last_json_line": {
+      "program": "limit-read-dirs",
+      "ok": true
+    },
+    "stdout_tail": "{\"program\": \"limit-read-dirs\", \"ok\": true}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:limit-read-dirs-9",
+    "exit": 1,
+    "seconds": 3.93,
+    "worked": false,
+    "reference": "42de1e9b-69cb-4d6d-9666-a0f5df3e0e20",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "The input is not the shape this tool declares, or it names two credentials for one place, so the tool did not start. tools:list {tool: ID} answers the tool's input_schema: send its input in `input`, matching that schema, and name one credential for each place. The tool's card declares a program the engine cannot use: each invoke.programs entry names one way to find it (at, search, fetch or same_as), and its runtime_read_dirs and runtime_programs are paths relative to the program's own folder. A folder anywhere else is given by the capability read-a-folder, or by use-this-computer-as-you. Reference: 42de1e9b-69cb-4d6d-9666-a0f5df3e0e20.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_run_input_refused. Cause: trillion::tool_runs::tools@src/tool_runs/tools.rs:565:45:condition: a_program_row_is_not_valid#cdcfa4c8023e288089792d8d2fee812f3d0ccecf\n"
+  },
+  "contained": {
+    "tool": "tool:limit-read-dirs-9-contained",
+    "exit": 1,
+    "seconds": 3.35,
+    "worked": false,
+    "reference": "e96d444c-cc8d-4a8c-806e-6757bf8b43ce",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "The input is not the shape this tool declares, or it names two credentials for one place, so the tool did not start. tools:list {tool: ID} answers the tool's input_schema: send its input in `input`, matching that schema, and name one credential for each place. The tool's card declares a program the engine cannot use: each invoke.programs entry names one way to find it (at, search, fetch or same_as), and its runtime_read_dirs and runtime_programs are paths relative to the program's own folder. A folder anywhere else is given by the capability read-a-folder, or by use-this-computer-as-you. Reference: e96d444c-cc8d-4a8c-806e-6757bf8b43ce.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_run_input_refused. Cause: trillion::tool_runs::tools@src/tool_runs/tools.rs:565:45:condition: a_program_row_is_not_valid#cdcfa4c8023e288089792d8d2fee812f3d0ccecf\n"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "case": "network-example",
+  "label": "placed-0909",
+  "card": "network-example",
+  "date": "2026-11-28 04:50:54 CST",
+  "load_average_1_5_15": [
+    26.6962890625,
+    22.93798828125,
+    20.94580078125
+  ],
+  "direct": {
+    "argv": [
+      "node",
+      "main.mjs"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/network-example",
+    "exit": 0,
+    "seconds": 0.57,
+    "worked": true,
+    "stdout_bytes": 55,
+    "last_json_line": {
+      "program": "network-example",
+      "status": 200,
+      "bytes": 577
+    },
+    "stdout_tail": "{\"program\":\"network-example\",\"status\":200,\"bytes\":577}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:network-example",
+    "exit": 0,
+    "seconds": 1.76,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 1543,
+    "stdout_tail": "[1543 bytes, last 1500]\nontainer@src/tool_runs/tools/container.rs:1036:21:condition: process_exit_unsuccessful#cdcfa4c8023e288089792d8d2fee812f3d0ccecf\",\n  \"error\": \"node:internal/deps/undici/undici:16416\\n      Error.captureStackTrace(err);\\n            ^\\n\\nTypeError: fetch failed\\n    at node:internal/deps/undici/undici:16416:13\\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\\n    at async file:///Users/brianakhtar/dev/trillion-any-program-matrix/programs/network-example/main.mjs:1:11 {\\n  [cause]: DOMException [Error]: Request was cancelled.\\n      at new DOMException (node:internal/per_context/domexception:76:18)\\n      at makeAppropriateNetworkError (node:internal/deps/undici/undici:10769:182)\\n      at httpNetworkFetch (node:internal/deps/undici/undici:12630:18)\\n      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\\n      at async httpNetworkOrCacheFetch (node:internal/deps/undici/undici:12505:33)\\n      at async httpFetch (node:internal/deps/undici/undici:12338:37)\\n      at async mainFetch (node:internal/deps/undici/undici:12099:24) {\\n    cause: RequestAbortedError [AbortError]: Proxy response (403) !== 200 when HTTP Tunneling\\n        at Client.connect (node:internal/deps/undici/undici:9747:26)\\n        at process.processTicksAndRejections (node:internal/process/task_queues:103:5) {\\n      code: 'UND_ERR_ABORTED'\\n    }\\n  }\\n}\\n\\nNode.js v25.3.0\",\n  \"exit_code\": 1,\n  \"replayed\": false,\n  \"tool\": \"tool:network-example\"\n}\n",
+    "stderr": ""
+  },
+  "contained": {
+    "tool": "tool:network-example-contained",
+    "exit": 0,
+    "seconds": 1.4,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 493,
+    "stdout_tail": "{\n  \"cause\": \"trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:1036:21:condition: process_exit_unsuccessful#cdcfa4c8023e288089792d8d2fee812f3d0ccecf\",\n  \"error\": \"/opt/homebrew/bin/node: OpenSSL configuration error:\\nC098EEF801000000:error:80000001:system library:BIO_new_file:Operation not permitted:crypto/bio/bss_file.c:67:calling fopen(/opt/homebrew/etc/openssl@3/openssl.cnf, rb)\",\n  \"exit_code\": 1,\n  \"replayed\": false,\n  \"tool\": \"tool:network-example-contained\"\n}\n",
+    "stderr": ""
+  }
+}

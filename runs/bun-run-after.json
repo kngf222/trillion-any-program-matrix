@@ -1,0 +1,50 @@
+{
+  "case": "bun-run",
+  "label": "after",
+  "card": "bun-run",
+  "date": "2026-11-28 00:22:47 CST",
+  "load_average_1_5_15": [
+    17.888671875,
+    11.3740234375,
+    7.88671875
+  ],
+  "direct": {
+    "argv": [
+      "bun",
+      "main.ts"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/bun-run",
+    "exit": 0,
+    "seconds": 0.06,
+    "worked": true,
+    "stdout_bytes": 89,
+    "last_json_line": {
+      "program": "bun-run",
+      "bun": "1.4.0",
+      "execPath": "/Users/brianakhtar/.bun/bin/bun",
+      "sum": 6
+    },
+    "stdout_tail": "{\"program\":\"bun-run\",\"bun\":\"1.4.0\",\"execPath\":\"/Users/brianakhtar/.bun/bin/bun\",\"sum\":6}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:bun-run",
+    "exit": 1,
+    "seconds": 0.82,
+    "worked": false,
+    "reference": "ad9f5856-df86-4579-ad8e-d16f835730c0",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "The tool did not start: its program \"bun\" is not on this computer. It was looked for as the tool's card names it: a path (from the card's workdir when it does not start with /), else by its name in your own PATH (your login shell's), this computer's program folders and the system's. Install it, or name it in the card by its full path. Reference: ad9f5856-df86-4579-ad8e-d16f835730c0.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_program_not_found. Cause: trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:1315:92:condition: program_not_found#90f192712e761b8570fdb84bda3187c3db4fe1f1\n"
+  },
+  "contained": {
+    "tool": "tool:bun-run-contained",
+    "exit": 1,
+    "seconds": 0.88,
+    "worked": false,
+    "reference": "7356d7a2-7ab7-4ac9-b3ca-56875146da12",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "The tool did not start: its program \"bun\" is not on this computer. It was looked for as the tool's card names it: a path (from the card's workdir when it does not start with /), else by its name in your own PATH (your login shell's), this computer's program folders and the system's. Install it, or name it in the card by its full path. Reference: 7356d7a2-7ab7-4ac9-b3ca-56875146da12.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_program_not_found. Cause: trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:1315:92:condition: program_not_found#90f192712e761b8570fdb84bda3187c3db4fe1f1\n"
+  }
+}

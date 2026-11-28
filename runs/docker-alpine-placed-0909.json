@@ -1,0 +1,48 @@
+{
+  "case": "docker-alpine",
+  "label": "placed-0909",
+  "card": "docker-alpine",
+  "date": "2026-11-28 04:51:08 CST",
+  "load_average_1_5_15": [
+    29.4423828125,
+    23.64794921875,
+    21.220703125
+  ],
+  "direct": {
+    "argv": [
+      "./run.sh"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/docker-alpine",
+    "exit": 0,
+    "seconds": 9.44,
+    "worked": true,
+    "stdout_bytes": 107,
+    "last_json_line": {
+      "program": "docker-alpine",
+      "kernel": "Linux 7.2.12-orbstack-00394-gbecdd6130068",
+      "os": "Alpine Linux v3.24"
+    },
+    "stdout_tail": "{\"program\":\"docker-alpine\",\"kernel\":\"Linux 7.2.12-orbstack-00394-gbecdd6130068\",\"os\":\"Alpine Linux v3.24\"}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:docker-alpine",
+    "exit": 0,
+    "seconds": 12.23,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 419,
+    "stdout_tail": "{\n  \"exit_code\": 0,\n  \"replayed\": false,\n  \"result\": {\n    \"exit_code\": 0,\n    \"result\": {\n      \"kernel\": \"Linux 7.2.12-orbstack-00394-gbecdd6130068\",\n      \"os\": \"Alpine Linux v3.24\",\n      \"program\": \"docker-alpine\"\n    },\n    \"stderr\": \"\",\n    \"stdout\": \"{\\\"program\\\":\\\"docker-alpine\\\",\\\"kernel\\\":\\\"Linux 7.2.12-orbstack-00394-gbecdd6130068\\\",\\\"os\\\":\\\"Alpine Linux v3.24\\\"}\\n\"\n  },\n  \"tool\": \"tool:docker-alpine\"\n}\n",
+    "stderr": ""
+  },
+  "contained": {
+    "tool": "tool:docker-alpine-contained",
+    "exit": 0,
+    "seconds": 1.25,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 658,
+    "stdout_tail": "{\n  \"cause\": \"trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:1036:21:condition: process_exit_unsuccessful#cdcfa4c8023e288089792d8d2fee812f3d0ccecf\",\n  \"error\": \"shell-init: error retrieving current directory: getcwd: cannot access parent directories: Operation not permitted\\n/Users/brianakhtar/dev/trillion-any-program-matrix/programs/docker-alpine/./run.sh: line 2: /usr/local/bin/docker: Operation not permitted\\n/Users/brianakhtar/dev/trillion-any-program-matrix/programs/docker-alpine/./run.sh: line 2: /usr/local/bin/docker: Undefined error: 0\",\n  \"exit_code\": 1,\n  \"replayed\": false,\n  \"tool\": \"tool:docker-alpine-contained\"\n}\n",
+    "stderr": ""
+  }
+}

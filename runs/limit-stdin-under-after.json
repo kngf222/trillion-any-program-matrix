@@ -1,0 +1,48 @@
+{
+  "case": "limit-stdin-under",
+  "label": "after",
+  "card": "limit-stdin",
+  "date": "2026-11-28 00:24:22 CST",
+  "load_average_1_5_15": [
+    15.6005859375,
+    12.9873046875,
+    8.91455078125
+  ],
+  "direct": {
+    "argv": [
+      "/usr/bin/python3",
+      "main.py"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-stdin",
+    "exit": 0,
+    "seconds": 0.04,
+    "worked": true,
+    "stdout_bytes": 51,
+    "last_json_line": {
+      "program": "limit-stdin",
+      "stdin_bytes": 1048576
+    },
+    "stdout_tail": "{\"program\": \"limit-stdin\", \"stdin_bytes\": 1048576}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:limit-stdin",
+    "exit": 0,
+    "seconds": 4.77,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 288,
+    "stdout_tail": "{\n  \"exit_code\": 0,\n  \"replayed\": false,\n  \"result\": {\n    \"exit_code\": 0,\n    \"result\": {\n      \"program\": \"limit-stdin\",\n      \"stdin_bytes\": 1048576\n    },\n    \"stderr\": \"\",\n    \"stdout\": \"{\\\"program\\\": \\\"limit-stdin\\\", \\\"stdin_bytes\\\": 1048576}\\n\"\n  },\n  \"tool\": \"tool:limit-stdin\"\n}\n",
+    "stderr": ""
+  },
+  "contained": {
+    "tool": "tool:limit-stdin-contained",
+    "exit": 0,
+    "seconds": 2.32,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 729,
+    "stdout_tail": "{\n  \"cause\": \"trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:1031:21:condition: process_exit_unsuccessful#90f192712e761b8570fdb84bda3187c3db4fe1f1\",\n  \"error\": \"xcrun: error: unable to load libxcrun (dlopen(/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib, 0x0005): tried: '/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib' (file system sandbox blocked open()), '/System/Volumes/Preboot/Cryptexes/OS/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib' (no such file), '/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib' (file system sandbox blocked open())).\",\n  \"exit_code\": 1,\n  \"replayed\": false,\n  \"tool\": \"tool:limit-stdin-contained\"\n}\n",
+    "stderr": ""
+  }
+}

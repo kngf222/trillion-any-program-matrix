@@ -1,0 +1,64 @@
+{
+  "case": "luxtts-voice",
+  "label": "placed-0909",
+  "card": "luxtts-voice",
+  "date": "2026-11-28 04:49:35 CST",
+  "load_average_1_5_15": [
+    21.30126953125,
+    20.79150390625,
+    20.04296875
+  ],
+  "direct": {
+    "argv": [
+      "/Users/brianakhtar/dev/LuxTTS/.venv/bin/python",
+      "/Users/brianakhtar/dev/trillion-wrap-luxtts/tools/say-words-in-a-voice/say.py"
+    ],
+    "cwd": "/Users/brianakhtar/dev/LuxTTS",
+    "exit": 0,
+    "seconds": 22.11,
+    "worked": true,
+    "stdout_bytes": 162,
+    "last_json_line": {
+      "out_file": "/Users/brianakhtar/dev/trillion-workshop/.git/scratch/matrix/lux-direct-placed-0909.wav",
+      "seconds_of_audio": 2.23,
+      "load_s": 3.06,
+      "speak_s": 7.3
+    },
+    "stdout_tail": "{\"out_file\": \"/Users/brianakhtar/dev/trillion-workshop/.git/scratch/matrix/lux-direct-placed-0909.wav\", \"seconds_of_audio\": 2.23, \"load_s\": 3.06, \"speak_s\": 7.3}\n",
+    "stderr_tail": "WARNING:root:Failed import k2 with error No module named 'k2'. Swoosh functions will fallback to PyTorch implementation, leading to slower speed and higher memory consumption.\nDevice set to use mps\nLoading model on GPU\n`return_token_timestamps` is deprecated for WhisperFeatureExtractor and will be removed in Transformers v5. Use `return_attention_mask` instead, as the number of frames can be inferred from it.\nUsing custom `forced_decoder_ids` from the (generation) config. This is deprecated in favor of the `task` and `language` flags/config options.\nTranscription using a multilingual Whisper will default to language detection followed by transcription instead of translation to English. This might be a breaking change for your use case. If you want to instead always translate your audio to English, make sure to pass `language='en'`. See https://github.com/huggingface/transformers/pull/28687 for more details.\n Keep using Clawed, Chat GBT or any AI you like.\n/Users/brianakhtar/dev/LuxTTS/.venv/lib/python3.10/site-packages/linacodec/vocoder/vocos.py:132: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.\n  with autocast(enabled=False):\n",
+    "wav": {
+      "file": "/Users/brianakhtar/dev/trillion-workshop/.git/scratch/matrix/lux-direct-placed-0909.wav",
+      "exists": true,
+      "bytes": 214060,
+      "seconds_of_audio": 2.229333,
+      "speech_to_text": "Trillion runs any program you already have."
+    }
+  },
+  "through_trillion": {
+    "tool": "tool:luxtts-voice",
+    "exit": 0,
+    "seconds": 14.82,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 1746,
+    "stdout_tail": "[1746 bytes, last 1500]\n\n      \"speak_s\": 3.07\n    },\n    \"stderr\": \"WARNING:root:Failed import k2 with error No module named 'k2'. Swoosh functions will fallback to PyTorch implementation, leading to slower speed and higher memory consumption.\\nDevice set to use mps\\nLoading model on GPU\\n`return_token_timestamps` is deprecated for WhisperFeatureExtractor and will be removed in Transformers v5. Use `return_attention_mask` instead, as the number of frames can be inferred from it.\\nUsing custom `forced_decoder_ids` from the (generation) config. This is deprecated in favor of the `task` and `language` flags/config options.\\nTranscription using a multilingual Whisper will default to language detection followed by transcription instead of translation to English. This might be a breaking change for your use case. If you want to instead always translate your audio to English, make sure to pass `language='en'`. See https://github.com/huggingface/transformers/pull/28687 for more details.\\n Keep using Clawed, Chat GBT or any AI you like.\\n/Users/brianakhtar/dev/LuxTTS/.venv/lib/python3.10/site-packages/linacodec/vocoder/vocos.py:132: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.\\n  with autocast(enabled=False):\\n\",\n    \"stdout\": \"{\\\"out_file\\\": \\\"/Users/brianakhtar/dev/trillion-workshop/.git/scratch/matrix/lux-placed-0909.wav\\\", \\\"seconds_of_audio\\\": 2.23, \\\"load_s\\\": 2.29, \\\"speak_s\\\": 3.07}\\n\"\n  },\n  \"tool\": \"tool:luxtts-voice\"\n}\n",
+    "stderr": "",
+    "wav": {
+      "file": "/Users/brianakhtar/dev/trillion-workshop/.git/scratch/matrix/lux-placed-0909.wav",
+      "exists": true,
+      "bytes": 214060,
+      "seconds_of_audio": 2.229333,
+      "speech_to_text": "Trillion runs any program you already have."
+    }
+  },
+  "contained": {
+    "tool": "tool:luxtts-voice-contained",
+    "exit": 0,
+    "seconds": 2.61,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 1291,
+    "stdout_tail": "{\n  \"cause\": \"trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:1036:21:condition: process_exit_unsuccessful#cdcfa4c8023e288089792d8d2fee812f3d0ccecf\",\n  \"error\": \"Python path configuration:\\n  PYTHONHOME = (not set)\\n  PYTHONPATH = (not set)\\n  program name = '/Users/brianakhtar/dev/LuxTTS/.venv/bin/python'\\n  isolated = 0\\n  environment = 1\\n  user site = 1\\n  import site = 1\\n  sys._base_executable = '/Users/brianakhtar/dev/LuxTTS/.venv/bin/python'\\n  sys.base_prefix = '/opt/homebrew/anaconda3'\\n  sys.base_exec_prefix = '/opt/homebrew/anaconda3'\\n  sys.platlibdir = 'lib'\\n  sys.executable = '/Users/brianakhtar/dev/LuxTTS/.venv/bin/python'\\n  sys.prefix = '/opt/homebrew/anaconda3'\\n  sys.exec_prefix = '/opt/homebrew/anaconda3'\\n  sys.path = [\\n    '/opt/homebrew/anaconda3/lib/python310.zip',\\n    '/opt/homebrew/anaconda3/lib/python3.10',\\n    '/opt/homebrew/anaconda3/lib/python3.10/lib-dynload',\\n  ]\\nFatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding\\nPython runtime state: core initialized\\nModuleNotFoundError: No module named 'encodings'\\n\\nCurrent thread 0x00000001f8ee98c0 (most recent call first):\\n  <no Python frame>\",\n  \"exit_code\": 1,\n  \"replayed\": false,\n  \"tool\": \"tool:luxtts-voice-contained\"\n}\n",
+    "stderr": ""
+  }
+}

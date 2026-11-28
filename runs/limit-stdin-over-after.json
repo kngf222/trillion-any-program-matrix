@@ -1,0 +1,48 @@
+{
+  "case": "limit-stdin-over",
+  "label": "after",
+  "card": "limit-stdin",
+  "date": "2026-11-28 00:24:29 CST",
+  "load_average_1_5_15": [
+    14.75146484375,
+    12.8544921875,
+    8.8916015625
+  ],
+  "direct": {
+    "argv": [
+      "/usr/bin/python3",
+      "main.py"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-stdin",
+    "exit": 0,
+    "seconds": 0.04,
+    "worked": true,
+    "stdout_bytes": 51,
+    "last_json_line": {
+      "program": "limit-stdin",
+      "stdin_bytes": 1048577
+    },
+    "stdout_tail": "{\"program\": \"limit-stdin\", \"stdin_bytes\": 1048577}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:limit-stdin",
+    "exit": 1,
+    "seconds": 1.49,
+    "worked": false,
+    "reference": "693c6fe8-f7b4-4f23-9b0f-60128a51e469",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "The input is not the shape this tool declares, or it names two credentials for one place, so the tool did not start. tools:list {tool: ID} answers the tool's input_schema: send its input in `input`, matching that schema, and name one credential for each place. Reference: 693c6fe8-f7b4-4f23-9b0f-60128a51e469.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_run_input_refused. Cause: trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:767:20:Failure::Invalid#90f192712e761b8570fdb84bda3187c3db4fe1f1\n"
+  },
+  "contained": {
+    "tool": "tool:limit-stdin-contained",
+    "exit": 1,
+    "seconds": 1.06,
+    "worked": false,
+    "reference": "1e3eac03-330f-420d-bcc1-cfd9eee956a9",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "The input is not the shape this tool declares, or it names two credentials for one place, so the tool did not start. tools:list {tool: ID} answers the tool's input_schema: send its input in `input`, matching that schema, and name one credential for each place. Reference: 1e3eac03-330f-420d-bcc1-cfd9eee956a9.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_run_input_refused. Cause: trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:767:20:Failure::Invalid#90f192712e761b8570fdb84bda3187c3db4fe1f1\n"
+  }
+}

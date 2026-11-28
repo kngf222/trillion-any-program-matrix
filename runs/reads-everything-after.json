@@ -1,0 +1,58 @@
+{
+  "case": "reads-everything",
+  "label": "after",
+  "card": "reads-everything",
+  "date": "2026-11-28 00:24:02 CST",
+  "load_average_1_5_15": [
+    18.5634765625,
+    13.33251953125,
+    8.93701171875
+  ],
+  "direct": {
+    "argv": [
+      "/usr/bin/python3",
+      "main.py",
+      "a",
+      "b"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/reads-everything",
+    "exit": 0,
+    "seconds": 0.04,
+    "worked": true,
+    "stdout_bytes": 266,
+    "last_json_line": {
+      "program": "reads-everything",
+      "args": [
+        "a",
+        "b"
+      ],
+      "stdin": "{\"first\":\"a\",\"second\":\"b\"}",
+      "file": "contents of data.txt",
+      "own_env": "yes",
+      "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/reads-everything",
+      "home": "/Users/brianakhtar"
+    },
+    "stdout_tail": "{\"program\": \"reads-everything\", \"args\": [\"a\", \"b\"], \"stdin\": \"{\\\"first\\\":\\\"a\\\",\\\"second\\\":\\\"b\\\"}\", \"file\": \"contents of data.txt\", \"own_env\": \"yes\", \"cwd\": \"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/reads-everything\", \"home\": \"/Users/brianakhtar\"}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:reads-everything",
+    "exit": 0,
+    "seconds": 0.97,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 817,
+    "stdout_tail": "{\n  \"exit_code\": 0,\n  \"replayed\": false,\n  \"result\": {\n    \"exit_code\": 0,\n    \"result\": {\n      \"args\": [\n        \"a\",\n        \"b\"\n      ],\n      \"cwd\": \"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/reads-everything\",\n      \"file\": \"contents of data.txt\",\n      \"home\": \"/Users/brianakhtar\",\n      \"own_env\": \"yes\",\n      \"program\": \"reads-everything\",\n      \"stdin\": \"{\\\"first\\\":\\\"a\\\",\\\"second\\\":\\\"b\\\"}\"\n    },\n    \"stderr\": \"\",\n    \"stdout\": \"{\\\"program\\\": \\\"reads-everything\\\", \\\"args\\\": [\\\"a\\\", \\\"b\\\"], \\\"stdin\\\": \\\"{\\\\\\\"first\\\\\\\":\\\\\\\"a\\\\\\\",\\\\\\\"second\\\\\\\":\\\\\\\"b\\\\\\\"}\\\", \\\"file\\\": \\\"contents of data.txt\\\", \\\"own_env\\\": \\\"yes\\\", \\\"cwd\\\": \\\"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/reads-everything\\\", \\\"home\\\": \\\"/Users/brianakhtar\\\"}\\n\"\n  },\n  \"tool\": \"tool:reads-everything\"\n}\n",
+    "stderr": ""
+  },
+  "contained": {
+    "tool": "tool:reads-everything-contained",
+    "exit": 0,
+    "seconds": 1.0,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 734,
+    "stdout_tail": "{\n  \"cause\": \"trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:1031:21:condition: process_exit_unsuccessful#90f192712e761b8570fdb84bda3187c3db4fe1f1\",\n  \"error\": \"xcrun: error: unable to load libxcrun (dlopen(/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib, 0x0005): tried: '/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib' (file system sandbox blocked open()), '/System/Volumes/Preboot/Cryptexes/OS/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib' (no such file), '/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib' (file system sandbox blocked open())).\",\n  \"exit_code\": 1,\n  \"replayed\": false,\n  \"tool\": \"tool:reads-everything-contained\"\n}\n",
+    "stderr": ""
+  }
+}

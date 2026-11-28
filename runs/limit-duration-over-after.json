@@ -1,0 +1,49 @@
+{
+  "case": "limit-duration-over",
+  "label": "after",
+  "card": "limit-duration",
+  "date": "2026-11-28 00:25:23 CST",
+  "load_average_1_5_15": [
+    10.4677734375,
+    11.873046875,
+    8.76806640625
+  ],
+  "direct": {
+    "argv": [
+      "/usr/bin/python3",
+      "main.py",
+      "125"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-duration",
+    "exit": 0,
+    "seconds": 125.03,
+    "worked": true,
+    "stdout_bytes": 48,
+    "last_json_line": {
+      "program": "limit-duration",
+      "slept_s": 125.0
+    },
+    "stdout_tail": "{\"program\": \"limit-duration\", \"slept_s\": 125.0}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:limit-duration",
+    "exit": 1,
+    "seconds": 120.85,
+    "worked": false,
+    "reference": "e3e5c028-02b7-4569-b738-9c3ea9cbb1e5",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "The tool may have run, but its outcome is not known. Ask again with the same request key to get the answer. Reference: e3e5c028-02b7-4569-b738-9c3ea9cbb1e5. To ask again without doing it twice, add --request-key e3e5c028-02b7-4569-b738-9c3ea9cbb1e5 to the command.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_run_outcome_unknown. Cause: trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:993:24:Failure::OutcomeUnknown#90f192712e761b8570fdb84bda3187c3db4fe1f1\n"
+  },
+  "contained": {
+    "tool": "tool:limit-duration-contained",
+    "exit": 0,
+    "seconds": 0.87,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 732,
+    "stdout_tail": "{\n  \"cause\": \"trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:1031:21:condition: process_exit_unsuccessful#90f192712e761b8570fdb84bda3187c3db4fe1f1\",\n  \"error\": \"xcrun: error: unable to load libxcrun (dlopen(/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib, 0x0005): tried: '/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib' (file system sandbox blocked open()), '/System/Volumes/Preboot/Cryptexes/OS/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib' (no such file), '/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib' (file system sandbox blocked open())).\",\n  \"exit_code\": 1,\n  \"replayed\": false,\n  \"tool\": \"tool:limit-duration-contained\"\n}\n",
+    "stderr": ""
+  }
+}

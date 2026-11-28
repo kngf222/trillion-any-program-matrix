@@ -1,0 +1,49 @@
+{
+  "case": "go-bin",
+  "label": "after",
+  "card": "go-bin",
+  "date": "2026-11-28 00:23:59 CST",
+  "load_average_1_5_15": [
+    19.91845703125,
+    13.50732421875,
+    8.97216796875
+  ],
+  "direct": {
+    "argv": [
+      "./go-bin"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/go-bin",
+    "exit": 0,
+    "seconds": 0.09,
+    "worked": true,
+    "stdout_bytes": 133,
+    "last_json_line": {
+      "program": "go-bin",
+      "go": "go1.26.3",
+      "os": "darwin",
+      "exe": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/go-bin/go-bin"
+    },
+    "stdout_tail": "{\"program\":\"go-bin\",\"go\":\"go1.26.3\",\"os\":\"darwin\",\"exe\":\"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/go-bin/go-bin\"}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:go-bin",
+    "exit": 0,
+    "seconds": 1.0,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 480,
+    "stdout_tail": "{\n  \"exit_code\": 0,\n  \"replayed\": false,\n  \"result\": {\n    \"exit_code\": 0,\n    \"result\": {\n      \"exe\": \"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/go-bin/./go-bin\",\n      \"go\": \"go1.26.3\",\n      \"os\": \"darwin\",\n      \"program\": \"go-bin\"\n    },\n    \"stderr\": \"\",\n    \"stdout\": \"{\\\"program\\\":\\\"go-bin\\\",\\\"go\\\":\\\"go1.26.3\\\",\\\"os\\\":\\\"darwin\\\",\\\"exe\\\":\\\"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/go-bin/./go-bin\\\"}\\n\"\n  },\n  \"tool\": \"tool:go-bin\"\n}\n",
+    "stderr": ""
+  },
+  "contained": {
+    "tool": "tool:go-bin-contained",
+    "exit": 0,
+    "seconds": 0.76,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 490,
+    "stdout_tail": "{\n  \"exit_code\": 0,\n  \"replayed\": false,\n  \"result\": {\n    \"exit_code\": 0,\n    \"result\": {\n      \"exe\": \"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/go-bin/./go-bin\",\n      \"go\": \"go1.26.3\",\n      \"os\": \"darwin\",\n      \"program\": \"go-bin\"\n    },\n    \"stderr\": \"\",\n    \"stdout\": \"{\\\"program\\\":\\\"go-bin\\\",\\\"go\\\":\\\"go1.26.3\\\",\\\"os\\\":\\\"darwin\\\",\\\"exe\\\":\\\"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/go-bin/./go-bin\\\"}\\n\"\n  },\n  \"tool\": \"tool:go-bin-contained\"\n}\n",
+    "stderr": ""
+  }
+}

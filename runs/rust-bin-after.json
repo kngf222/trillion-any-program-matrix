@@ -1,0 +1,49 @@
+{
+  "case": "rust-bin",
+  "label": "after",
+  "card": "rust-bin",
+  "date": "2026-11-28 00:23:57 CST",
+  "load_average_1_5_15": [
+    19.91845703125,
+    13.50732421875,
+    8.97216796875
+  ],
+  "direct": {
+    "argv": [
+      "./target/release/rust-bin"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/rust-bin",
+    "exit": 0,
+    "seconds": 0.02,
+    "worked": true,
+    "stdout_bytes": 154,
+    "last_json_line": {
+      "program": "rust-bin",
+      "os": "macos",
+      "arch": "aarch64",
+      "exe": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/rust-bin/target/release/rust-bin"
+    },
+    "stdout_tail": "{\"program\":\"rust-bin\",\"os\":\"macos\",\"arch\":\"aarch64\",\"exe\":\"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/rust-bin/target/release/rust-bin\"}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:rust-bin",
+    "exit": 0,
+    "seconds": 0.89,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 524,
+    "stdout_tail": "{\n  \"exit_code\": 0,\n  \"replayed\": false,\n  \"result\": {\n    \"exit_code\": 0,\n    \"result\": {\n      \"arch\": \"aarch64\",\n      \"exe\": \"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/rust-bin/./target/release/rust-bin\",\n      \"os\": \"macos\",\n      \"program\": \"rust-bin\"\n    },\n    \"stderr\": \"\",\n    \"stdout\": \"{\\\"program\\\":\\\"rust-bin\\\",\\\"os\\\":\\\"macos\\\",\\\"arch\\\":\\\"aarch64\\\",\\\"exe\\\":\\\"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/rust-bin/./target/release/rust-bin\\\"}\\n\"\n  },\n  \"tool\": \"tool:rust-bin\"\n}\n",
+    "stderr": ""
+  },
+  "contained": {
+    "tool": "tool:rust-bin-contained",
+    "exit": 0,
+    "seconds": 0.88,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 534,
+    "stdout_tail": "{\n  \"exit_code\": 0,\n  \"replayed\": false,\n  \"result\": {\n    \"exit_code\": 0,\n    \"result\": {\n      \"arch\": \"aarch64\",\n      \"exe\": \"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/rust-bin/./target/release/rust-bin\",\n      \"os\": \"macos\",\n      \"program\": \"rust-bin\"\n    },\n    \"stderr\": \"\",\n    \"stdout\": \"{\\\"program\\\":\\\"rust-bin\\\",\\\"os\\\":\\\"macos\\\",\\\"arch\\\":\\\"aarch64\\\",\\\"exe\\\":\\\"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/rust-bin/./target/release/rust-bin\\\"}\\n\"\n  },\n  \"tool\": \"tool:rust-bin-contained\"\n}\n",
+    "stderr": ""
+  }
+}

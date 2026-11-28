@@ -1,0 +1,422 @@
+[
+ {
+  "case": "node-npm",
+  "direct": [
+   true,
+   0.1
+  ],
+  "card": [
+   true,
+   1.5
+  ],
+  "contained": [
+   true,
+   1.15
+  ]
+ },
+ {
+  "case": "node-nvm",
+  "direct": [
+   true,
+   0.06
+  ],
+  "card": [
+   true,
+   1.24
+  ],
+  "contained": [
+   true,
+   0.78
+  ]
+ },
+ {
+  "case": "bun-run",
+  "direct": [
+   true,
+   0.06
+  ],
+  "card": [
+   false,
+   0.82
+  ],
+  "contained": [
+   false,
+   0.88
+  ]
+ },
+ {
+  "case": "deno-run",
+  "direct": [
+   true,
+   0.17
+  ],
+  "card": [
+   true,
+   1.1
+  ],
+  "contained": [
+   true,
+   0.92
+  ]
+ },
+ {
+  "case": "python-system",
+  "direct": [
+   true,
+   0.06
+  ],
+  "card": [
+   true,
+   0.88
+  ],
+  "contained": [
+   true,
+   0.92
+  ]
+ },
+ {
+  "case": "python-venv",
+  "direct": [
+   true,
+   0.13
+  ],
+  "card": [
+   true,
+   1.1
+  ],
+  "contained": [
+   true,
+   0.97
+  ]
+ },
+ {
+  "case": "conda-python",
+  "direct": [
+   true,
+   0.27
+  ],
+  "card": [
+   true,
+   1.46
+  ],
+  "contained": [
+   true,
+   1.07
+  ]
+ },
+ {
+  "case": "uv-project",
+  "direct": [
+   true,
+   0.34
+  ],
+  "card": [
+   true,
+   1.18
+  ],
+  "contained": [
+   true,
+   1.2
+  ]
+ },
+ {
+  "case": "luxtts-voice",
+  "direct": [
+   true,
+   28.58
+  ],
+  "card": [
+   true,
+   23.16
+  ],
+  "contained": [
+   true,
+   0.84
+  ]
+ },
+ {
+  "case": "rust-bin",
+  "direct": [
+   true,
+   0.02
+  ],
+  "card": [
+   true,
+   0.89
+  ],
+  "contained": [
+   true,
+   0.88
+  ]
+ },
+ {
+  "case": "go-bin",
+  "direct": [
+   true,
+   0.09
+  ],
+  "card": [
+   true,
+   1.0
+  ],
+  "contained": [
+   true,
+   0.76
+  ]
+ },
+ {
+  "case": "shell-script",
+  "direct": [
+   true,
+   0.01
+  ],
+  "card": [
+   true,
+   0.85
+  ],
+  "contained": [
+   true,
+   0.83
+  ]
+ },
+ {
+  "case": "reads-everything",
+  "direct": [
+   true,
+   0.04
+  ],
+  "card": [
+   true,
+   0.97
+  ],
+  "contained": [
+   true,
+   1.0
+  ]
+ },
+ {
+  "case": "writes-binary",
+  "direct": [
+   true,
+   0.05
+  ],
+  "card": [
+   true,
+   0.97
+  ],
+  "contained": [
+   true,
+   0.85
+  ]
+ },
+ {
+  "case": "http-server",
+  "direct": [
+   true,
+   0.13
+  ],
+  "card": [
+   true,
+   0.83
+  ],
+  "contained": [
+   true,
+   1.08
+  ]
+ },
+ {
+  "case": "vault-tidycal",
+  "direct": [
+   true,
+   0.5
+  ],
+  "card": [
+   false,
+   0.76
+  ],
+  "contained": [
+   true,
+   0.9
+  ]
+ },
+ {
+  "case": "network-example",
+  "direct": [
+   true,
+   0.23
+  ],
+  "card": [
+   true,
+   1.17
+  ],
+  "contained": [
+   true,
+   1.07
+  ]
+ },
+ {
+  "case": "pure-compute",
+  "direct": [
+   true,
+   0.03
+  ],
+  "card": [
+   true,
+   0.66
+  ],
+  "contained": [
+   true,
+   0.7
+  ]
+ },
+ {
+  "case": "mac-only",
+  "direct": [
+   true,
+   0.46
+  ],
+  "card": [
+   true,
+   0.87
+  ],
+  "contained": [
+   true,
+   1.01
+  ]
+ },
+ {
+  "case": "docker-alpine",
+  "direct": [
+   false,
+   0.16
+  ],
+  "card": [
+   true,
+   0.8
+  ],
+  "contained": [
+   true,
+   0.71
+  ]
+ },
+ {
+  "case": "limit-stdin-under",
+  "direct": [
+   true,
+   0.04
+  ],
+  "card": [
+   true,
+   4.77
+  ],
+  "contained": [
+   true,
+   2.32
+  ]
+ },
+ {
+  "case": "limit-stdin-over",
+  "direct": [
+   true,
+   0.04
+  ],
+  "card": [
+   false,
+   1.49
+  ],
+  "contained": [
+   false,
+   1.06
+  ]
+ },
+ {
+  "case": "limit-stdout-under",
+  "direct": [
+   true,
+   0.05
+  ],
+  "card": [
+   true,
+   45.6
+  ],
+  "contained": [
+   true,
+   1.09
+  ]
+ },
+ {
+  "case": "limit-stdout-over",
+  "direct": [
+   true,
+   0.05
+  ],
+  "card": [
+   false,
+   0.71
+  ],
+  "contained": [
+   true,
+   0.65
+  ]
+ },
+ {
+  "case": "limit-read-dirs-8",
+  "direct": [
+   true,
+   0.03
+  ],
+  "card": [
+   false,
+   0.63
+  ],
+  "contained": [
+   false,
+   0.8
+  ]
+ },
+ {
+  "case": "limit-read-dirs-9",
+  "direct": [
+   true,
+   0.02
+  ],
+  "card": [
+   false,
+   0.71
+  ],
+  "contained": [
+   false,
+   0.76
+  ]
+ },
+ {
+  "case": "limit-duration-under",
+  "direct": [
+   true,
+   115.03
+  ],
+  "card": [
+   true,
+   115.69
+  ],
+  "contained": [
+   true,
+   0.86
+  ]
+ },
+ {
+  "case": "limit-duration-over",
+  "direct": [
+   true,
+   125.03
+  ],
+  "card": [
+   false,
+   120.85
+  ],
+  "contained": [
+   true,
+   0.87
+  ]
+ }
+]

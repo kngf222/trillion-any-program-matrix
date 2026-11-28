@@ -1,0 +1,51 @@
+{
+  "case": "uv-project",
+  "label": "placed-0909",
+  "card": "uv-project",
+  "date": "2026-11-28 04:49:30 CST",
+  "load_average_1_5_15": [
+    22.02392578125,
+    20.92333984375,
+    20.0849609375
+  ],
+  "direct": {
+    "argv": [
+      "uv",
+      "run",
+      "main.py"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/uv-project",
+    "exit": 0,
+    "seconds": 0.3,
+    "worked": true,
+    "stdout_bytes": 244,
+    "last_json_line": {
+      "program": "uv-project",
+      "prefix": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/uv-project/.venv",
+      "executable": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/uv-project/.venv/bin/python3",
+      "tabulate": "0.10.0"
+    },
+    "stdout_tail": "{\"program\": \"uv-project\", \"prefix\": \"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/uv-project/.venv\", \"executable\": \"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/uv-project/.venv/bin/python3\", \"tabulate\": \"0.10.0\"}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:uv-project",
+    "exit": 0,
+    "seconds": 1.85,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 695,
+    "stdout_tail": "{\n  \"exit_code\": 0,\n  \"replayed\": false,\n  \"result\": {\n    \"exit_code\": 0,\n    \"result\": {\n      \"executable\": \"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/uv-project/.venv/bin/python3\",\n      \"prefix\": \"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/uv-project/.venv\",\n      \"program\": \"uv-project\",\n      \"tabulate\": \"0.10.0\"\n    },\n    \"stderr\": \"\",\n    \"stdout\": \"{\\\"program\\\": \\\"uv-project\\\", \\\"prefix\\\": \\\"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/uv-project/.venv\\\", \\\"executable\\\": \\\"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/uv-project/.venv/bin/python3\\\", \\\"tabulate\\\": \\\"0.10.0\\\"}\\n\"\n  },\n  \"tool\": \"tool:uv-project\"\n}\n",
+    "stderr": ""
+  },
+  "contained": {
+    "tool": "tool:uv-project-contained",
+    "exit": 0,
+    "seconds": 2.58,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 299,
+    "stdout_tail": "{\n  \"cause\": \"trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:1036:21:condition: process_exit_unsuccessful#cdcfa4c8023e288089792d8d2fee812f3d0ccecf\",\n  \"error\": \"Current directory does not exist\",\n  \"exit_code\": 1,\n  \"replayed\": false,\n  \"tool\": \"tool:uv-project-contained\"\n}\n",
+    "stderr": ""
+  }
+}

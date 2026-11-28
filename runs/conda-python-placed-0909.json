@@ -1,0 +1,50 @@
+{
+  "case": "conda-python",
+  "label": "placed-0909",
+  "card": "conda-python",
+  "date": "2026-11-28 04:49:25 CST",
+  "load_average_1_5_15": [
+    22.98388671875,
+    21.09130859375,
+    20.138671875
+  ],
+  "direct": {
+    "argv": [
+      "/opt/homebrew/anaconda3/bin/python",
+      "main.py"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/conda-python",
+    "exit": 0,
+    "seconds": 0.16,
+    "worked": true,
+    "stdout_bytes": 135,
+    "last_json_line": {
+      "program": "conda-python",
+      "prefix": "/opt/homebrew/anaconda3",
+      "executable": "/opt/homebrew/anaconda3/bin/python",
+      "numpy": "2.2.6"
+    },
+    "stdout_tail": "{\"program\": \"conda-python\", \"prefix\": \"/opt/homebrew/anaconda3\", \"executable\": \"/opt/homebrew/anaconda3/bin/python\", \"numpy\": \"2.2.6\"}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:conda-python",
+    "exit": 0,
+    "seconds": 3.77,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 479,
+    "stdout_tail": "{\n  \"exit_code\": 0,\n  \"replayed\": false,\n  \"result\": {\n    \"exit_code\": 0,\n    \"result\": {\n      \"executable\": \"/opt/homebrew/anaconda3/bin/python\",\n      \"numpy\": \"2.2.6\",\n      \"prefix\": \"/opt/homebrew/anaconda3\",\n      \"program\": \"conda-python\"\n    },\n    \"stderr\": \"\",\n    \"stdout\": \"{\\\"program\\\": \\\"conda-python\\\", \\\"prefix\\\": \\\"/opt/homebrew/anaconda3\\\", \\\"executable\\\": \\\"/opt/homebrew/anaconda3/bin/python\\\", \\\"numpy\\\": \\\"2.2.6\\\"}\\n\"\n  },\n  \"tool\": \"tool:conda-python\"\n}\n",
+    "stderr": ""
+  },
+  "contained": {
+    "tool": "tool:conda-python-contained",
+    "exit": 0,
+    "seconds": 1.32,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 1255,
+    "stdout_tail": "{\n  \"cause\": \"trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:1036:21:condition: process_exit_unsuccessful#cdcfa4c8023e288089792d8d2fee812f3d0ccecf\",\n  \"error\": \"Python path configuration:\\n  PYTHONHOME = (not set)\\n  PYTHONPATH = (not set)\\n  program name = '/opt/homebrew/anaconda3/bin/python'\\n  isolated = 0\\n  environment = 1\\n  user site = 1\\n  import site = 1\\n  sys._base_executable = '/opt/homebrew/anaconda3/bin/python'\\n  sys.base_prefix = '/opt/homebrew/anaconda3'\\n  sys.base_exec_prefix = '/opt/homebrew/anaconda3'\\n  sys.platlibdir = 'lib'\\n  sys.executable = '/opt/homebrew/anaconda3/bin/python'\\n  sys.prefix = '/opt/homebrew/anaconda3'\\n  sys.exec_prefix = '/opt/homebrew/anaconda3'\\n  sys.path = [\\n    '/opt/homebrew/anaconda3/lib/python310.zip',\\n    '/opt/homebrew/anaconda3/lib/python3.10',\\n    '/opt/homebrew/anaconda3/lib/python3.10/lib-dynload',\\n  ]\\nFatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding\\nPython runtime state: core initialized\\nModuleNotFoundError: No module named 'encodings'\\n\\nCurrent thread 0x00000001f8ee98c0 (most recent call first):\\n  <no Python frame>\",\n  \"exit_code\": 1,\n  \"replayed\": false,\n  \"tool\": \"tool:conda-python-contained\"\n}\n",
+    "stderr": ""
+  }
+}

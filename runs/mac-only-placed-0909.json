@@ -1,0 +1,50 @@
+{
+  "case": "mac-only",
+  "label": "placed-0909",
+  "card": "mac-only",
+  "date": "2026-11-28 04:51:02 CST",
+  "load_average_1_5_15": [
+    28.00146484375,
+    23.27099609375,
+    21.07470703125
+  ],
+  "direct": {
+    "argv": [
+      "./run.sh"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/mac-only",
+    "exit": 0,
+    "seconds": 0.57,
+    "worked": true,
+    "stdout_bytes": 106,
+    "last_json_line": {
+      "program": "mac-only",
+      "product": "macOS",
+      "version": "26.4",
+      "kind": "Plain Text Document",
+      "osascript": "26.4"
+    },
+    "stdout_tail": "{\"program\":\"mac-only\",\"product\":\"macOS\",\"version\":\"26.4\",\"kind\":\"Plain Text Document\",\"osascript\":\"26.4\"}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:mac-only",
+    "exit": 0,
+    "seconds": 2.08,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 436,
+    "stdout_tail": "{\n  \"exit_code\": 0,\n  \"replayed\": false,\n  \"result\": {\n    \"exit_code\": 0,\n    \"result\": {\n      \"kind\": \"Plain Text Document\",\n      \"osascript\": \"26.4\",\n      \"product\": \"macOS\",\n      \"program\": \"mac-only\",\n      \"version\": \"26.4\"\n    },\n    \"stderr\": \"\",\n    \"stdout\": \"{\\\"program\\\":\\\"mac-only\\\",\\\"product\\\":\\\"macOS\\\",\\\"version\\\":\\\"26.4\\\",\\\"kind\\\":\\\"Plain Text Document\\\",\\\"osascript\\\":\\\"26.4\\\"}\\n\"\n  },\n  \"tool\": \"tool:mac-only\"\n}\n",
+    "stderr": ""
+  },
+  "contained": {
+    "tool": "tool:mac-only-contained",
+    "exit": 0,
+    "seconds": 2.85,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 924,
+    "stdout_tail": "{\n  \"exit_code\": 0,\n  \"replayed\": false,\n  \"result\": {\n    \"exit_code\": 0,\n    \"result\": {\n      \"kind\": \"note.txt: could not find note.txt.\",\n      \"osascript\": \"\",\n      \"product\": \"macOS\",\n      \"program\": \"mac-only\",\n      \"version\": \"26.4\"\n    },\n    \"stderr\": \"shell-init: error retrieving current directory: getcwd: cannot access parent directories: Operation not permitted\\n2026-11-28 04:51:06.346 osascript[28932:6328096] CFURLCopyResourcePropertyForKey failed because it was passed a URL which has no scheme\\n2026-11-28 04:51:06.346 osascript[28932:6327961] CFURLCopyResourcePropertyForKey failed because it was passed a URL which has no scheme\\n15:22: syntax error: Expected \u201c,\u201d but found property. (-2741)\\n\",\n    \"stdout\": \"{\\\"program\\\":\\\"mac-only\\\",\\\"product\\\":\\\"macOS\\\",\\\"version\\\":\\\"26.4\\\",\\\"kind\\\":\\\"note.txt: could not find note.txt.\\\",\\\"osascript\\\":\\\"\\\"}\\n\"\n  },\n  \"tool\": \"tool:mac-only-contained\"\n}\n",
+    "stderr": ""
+  }
+}

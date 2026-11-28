@@ -1,0 +1,49 @@
+{
+  "case": "shell-script",
+  "label": "after",
+  "card": "shell-script",
+  "date": "2026-11-28 00:24:00 CST",
+  "load_average_1_5_15": [
+    19.91845703125,
+    13.50732421875,
+    8.97216796875
+  ],
+  "direct": {
+    "argv": [
+      "./run.sh"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/shell-script",
+    "exit": 0,
+    "seconds": 0.01,
+    "worked": true,
+    "stdout_bytes": 145,
+    "last_json_line": {
+      "program": "shell-script",
+      "shell": "5.9",
+      "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/shell-script",
+      "uname": "Darwin arm64"
+    },
+    "stdout_tail": "{\"program\":\"shell-script\",\"shell\":\"5.9\",\"cwd\":\"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/shell-script\",\"uname\":\"Darwin arm64\"}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:shell-script",
+    "exit": 0,
+    "seconds": 0.85,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 506,
+    "stdout_tail": "{\n  \"exit_code\": 0,\n  \"replayed\": false,\n  \"result\": {\n    \"exit_code\": 0,\n    \"result\": {\n      \"cwd\": \"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/shell-script\",\n      \"program\": \"shell-script\",\n      \"shell\": \"5.9\",\n      \"uname\": \"Darwin arm64\"\n    },\n    \"stderr\": \"\",\n    \"stdout\": \"{\\\"program\\\":\\\"shell-script\\\",\\\"shell\\\":\\\"5.9\\\",\\\"cwd\\\":\\\"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/shell-script\\\",\\\"uname\\\":\\\"Darwin arm64\\\"}\\n\"\n  },\n  \"tool\": \"tool:shell-script\"\n}\n",
+    "stderr": ""
+  },
+  "contained": {
+    "tool": "tool:shell-script-contained",
+    "exit": 0,
+    "seconds": 0.83,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 374,
+    "stdout_tail": "{\n  \"exit_code\": 0,\n  \"replayed\": false,\n  \"result\": {\n    \"exit_code\": 0,\n    \"result\": {\n      \"cwd\": \".\",\n      \"program\": \"shell-script\",\n      \"shell\": \"5.9\",\n      \"uname\": \"Darwin arm64\"\n    },\n    \"stderr\": \"\",\n    \"stdout\": \"{\\\"program\\\":\\\"shell-script\\\",\\\"shell\\\":\\\"5.9\\\",\\\"cwd\\\":\\\".\\\",\\\"uname\\\":\\\"Darwin arm64\\\"}\\n\"\n  },\n  \"tool\": \"tool:shell-script-contained\"\n}\n",
+    "stderr": ""
+  }
+}

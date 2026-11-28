@@ -1,0 +1,54 @@
+{
+  "case": "vault-tidycal",
+  "label": "after",
+  "card": "vault-tidycal",
+  "date": "2026-11-28 00:24:12 CST",
+  "load_average_1_5_15": [
+    16.61865234375,
+    13.08984375,
+    8.90185546875
+  ],
+  "direct": {
+    "argv": [
+      "sh",
+      "/Users/brianakhtar/dev/trillion-apps/scripts/read-a-held-value.sh",
+      "read",
+      "tidycal-api-token",
+      "|",
+      "sh",
+      "-c",
+      "TIDYCAL_API_TOKEN=$(cat) exec node list.mjs"
+    ],
+    "cwd": "/Users/brianakhtar/dev/try-a-plain-tool-with-a-key/tools/list-my-booking-types",
+    "exit": 0,
+    "seconds": 0.5,
+    "worked": true,
+    "stdout_bytes": 33,
+    "last_json_line": {
+      "status": 200,
+      "booking_types": 3
+    },
+    "stdout_tail": "{\"status\":200,\"booking_types\":3}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:vault-tidycal",
+    "exit": 1,
+    "seconds": 0.76,
+    "worked": false,
+    "reference": "0ebb5639-314e-4b80-a455-8444783b8895",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "The tool did not start, and its key was not read: it asks for \"use-this-computer-as-you\", under which a program reaches whatever you can, so a key it held could go past the hosts the key is kept for. Run a tool that needs a key without that capability (it then runs inside its own boundary, where its key reaches only its hosts), or give the program its folders with read-a-folder. Reference: 0ebb5639-314e-4b80-a455-8444783b8895.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_tool_key_not_fenced. Cause: trillion::tool_runs::tools::computer@src/tool_runs/tools/computer.rs:437:24:condition: key_not_fenced#90f192712e761b8570fdb84bda3187c3db4fe1f1\n"
+  },
+  "contained": {
+    "tool": "tool:vault-tidycal-contained",
+    "exit": 0,
+    "seconds": 0.9,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 491,
+    "stdout_tail": "{\n  \"cause\": \"trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:1031:21:condition: process_exit_unsuccessful#90f192712e761b8570fdb84bda3187c3db4fe1f1\",\n  \"error\": \"/opt/homebrew/bin/node: OpenSSL configuration error:\\nC098EEF801000000:error:80000001:system library:BIO_new_file:Operation not permitted:crypto/bio/bss_file.c:67:calling fopen(/opt/homebrew/etc/openssl@3/openssl.cnf, rb)\",\n  \"exit_code\": 1,\n  \"replayed\": false,\n  \"tool\": \"tool:vault-tidycal-contained\"\n}\n",
+    "stderr": ""
+  }
+}

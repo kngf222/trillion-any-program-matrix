@@ -1,0 +1,52 @@
+{
+  "case": "writes-binary",
+  "label": "placed-0909",
+  "card": "writes-binary",
+  "date": "2026-11-28 04:50:37 CST",
+  "load_average_1_5_15": [
+    28.08349609375,
+    22.90380859375,
+    20.88623046875
+  ],
+  "direct": {
+    "argv": [
+      "/usr/bin/python3",
+      "main.py",
+      "/Users/brianakhtar/dev/trillion-workshop/.git/scratch/matrix/png-direct-placed-0909.png"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/writes-binary",
+    "exit": 0,
+    "seconds": 0.74,
+    "worked": true,
+    "stdout_bytes": 224,
+    "last_json_line": {
+      "program": "writes-binary",
+      "out_file": "/Users/brianakhtar/dev/trillion-workshop/.git/scratch/matrix/png-direct-placed-0909.png",
+      "bytes": 463,
+      "sha256": "0115e89c5e931d3ceca2f128f76e6c00633876ebb9a9abc20968d88c43eee5ce"
+    },
+    "stdout_tail": "{\"program\": \"writes-binary\", \"out_file\": \"/Users/brianakhtar/dev/trillion-workshop/.git/scratch/matrix/png-direct-placed-0909.png\", \"bytes\": 463, \"sha256\": \"0115e89c5e931d3ceca2f128f76e6c00633876ebb9a9abc20968d88c43eee5ce\"}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:writes-binary",
+    "exit": 0,
+    "seconds": 2.91,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 642,
+    "stdout_tail": "{\n  \"exit_code\": 0,\n  \"replayed\": false,\n  \"result\": {\n    \"exit_code\": 0,\n    \"result\": {\n      \"bytes\": 463,\n      \"out_file\": \"/Users/brianakhtar/dev/trillion-workshop/.git/scratch/matrix/png-placed-0909.png\",\n      \"program\": \"writes-binary\",\n      \"sha256\": \"0115e89c5e931d3ceca2f128f76e6c00633876ebb9a9abc20968d88c43eee5ce\"\n    },\n    \"stderr\": \"\",\n    \"stdout\": \"{\\\"program\\\": \\\"writes-binary\\\", \\\"out_file\\\": \\\"/Users/brianakhtar/dev/trillion-workshop/.git/scratch/matrix/png-placed-0909.png\\\", \\\"bytes\\\": 463, \\\"sha256\\\": \\\"0115e89c5e931d3ceca2f128f76e6c00633876ebb9a9abc20968d88c43eee5ce\\\"}\\n\"\n  },\n  \"tool\": \"tool:writes-binary\"\n}\n",
+    "stderr": "",
+    "file_exists": true
+  },
+  "contained": {
+    "tool": "tool:writes-binary-contained",
+    "exit": 0,
+    "seconds": 2.18,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 731,
+    "stdout_tail": "{\n  \"cause\": \"trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:1036:21:condition: process_exit_unsuccessful#cdcfa4c8023e288089792d8d2fee812f3d0ccecf\",\n  \"error\": \"xcrun: error: unable to load libxcrun (dlopen(/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib, 0x0005): tried: '/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib' (file system sandbox blocked open()), '/System/Volumes/Preboot/Cryptexes/OS/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib' (no such file), '/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib' (file system sandbox blocked open())).\",\n  \"exit_code\": 1,\n  \"replayed\": false,\n  \"tool\": \"tool:writes-binary-contained\"\n}\n",
+    "stderr": ""
+  }
+}

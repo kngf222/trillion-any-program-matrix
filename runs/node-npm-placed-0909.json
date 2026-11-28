@@ -1,0 +1,49 @@
+{
+  "case": "node-npm",
+  "label": "placed-0909",
+  "card": "node-npm",
+  "date": "2026-11-28 04:49:06 CST",
+  "load_average_1_5_15": [
+    20.6572265625,
+    20.57373046875,
+    19.93994140625
+  ],
+  "direct": {
+    "argv": [
+      "node",
+      "main.mjs"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/node-npm",
+    "exit": 0,
+    "seconds": 0.09,
+    "worked": true,
+    "stdout_bytes": 62,
+    "last_json_line": {
+      "program": "node-npm",
+      "sample": "2026-11-29",
+      "node": "v25.3.0"
+    },
+    "stdout_tail": "{\"program\":\"node-npm\",\"sample\":\"2026-11-29\",\"node\":\"v25.3.0\"}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:node-npm",
+    "exit": 0,
+    "seconds": 2.58,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 324,
+    "stdout_tail": "{\n  \"exit_code\": 0,\n  \"replayed\": false,\n  \"result\": {\n    \"exit_code\": 0,\n    \"result\": {\n      \"node\": \"v25.3.0\",\n      \"program\": \"node-npm\",\n      \"sample\": \"2026-11-29\"\n    },\n    \"stderr\": \"\",\n    \"stdout\": \"{\\\"program\\\":\\\"node-npm\\\",\\\"sample\\\":\\\"2026-11-29\\\",\\\"node\\\":\\\"v25.3.0\\\"}\\n\"\n  },\n  \"tool\": \"tool:node-npm\"\n}\n",
+    "stderr": ""
+  },
+  "contained": {
+    "tool": "tool:node-npm-contained",
+    "exit": 0,
+    "seconds": 1.06,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 486,
+    "stdout_tail": "{\n  \"cause\": \"trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:1036:21:condition: process_exit_unsuccessful#cdcfa4c8023e288089792d8d2fee812f3d0ccecf\",\n  \"error\": \"/opt/homebrew/bin/node: OpenSSL configuration error:\\nC098EEF801000000:error:80000001:system library:BIO_new_file:Operation not permitted:crypto/bio/bss_file.c:67:calling fopen(/opt/homebrew/etc/openssl@3/openssl.cnf, rb)\",\n  \"exit_code\": 1,\n  \"replayed\": false,\n  \"tool\": \"tool:node-npm-contained\"\n}\n",
+    "stderr": ""
+  }
+}

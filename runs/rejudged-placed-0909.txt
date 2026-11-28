@@ -1,0 +1,27 @@
+| case | direct | card | contained |
+|---|---|---|---|
+| bun-run | ok 0.13s | FAILED 0.89s | FAILED 0.98s |
+| conda-python | ok 0.16s | ok 3.77s | FAILED 1.32s (process_exit_unsuccessful) |
+| deno-run | ok 0.22s | ok 2.48s | FAILED 1.17s (process_exit_unsuccessful) |
+| docker-alpine | ok 9.44s | ok 12.23s | FAILED 1.25s (process_exit_unsuccessful) |
+| go-bin | ok 0.21s | ok 1.97s | ok 1.07s |
+| http-server | ok 0.37s | ok 1.33s | ok 0.9s |
+| limit-duration-over | ok 126.15s | FAILED 123.16s | FAILED 2.91s (process_exit_unsuccessful) |
+| limit-duration-under | ok 116.16s | ok 117.86s | FAILED 3.05s (process_exit_unsuccessful) |
+| limit-read-dirs-8 | ok 0.33s | FAILED 3.5s | FAILED 3.77s |
+| limit-read-dirs-9 | ok 0.32s | FAILED 3.93s | FAILED 3.35s |
+| limit-stdin-over | ok 0.12s | ok 1.39s | FAILED 1.75s (process_exit_unsuccessful) |
+| limit-stdin-under | ok 0.2s | ok 2.96s | FAILED 2.05s (process_exit_unsuccessful) |
+| limit-stdout-over | ok 1.32s | FAILED 4.67s | FAILED 3.11s (process_exit_unsuccessful) |
+| limit-stdout-under | ok 0.15s | ok 53.99s | FAILED 4.61s (process_exit_unsuccessful) |
+| luxtts-voice | ok 22.11s | ok 14.82s | FAILED 2.61s (process_exit_unsuccessful) |
+| mac-only | ok 0.57s | ok 2.08s | ok 2.85s |
+| network-example | ok 0.57s | FAILED 1.76s (error in answer) | FAILED 1.4s (process_exit_unsuccessful) |
+| node-npm | ok 0.09s | ok 2.58s | FAILED 1.06s (process_exit_unsuccessful) |
+| node-nvm | ok 0.1s | ok 1.08s | FAILED 1.19s (process_exit_unsuccessful) |
+| pure-compute | ok 0.26s | ok 1.99s | FAILED 1.4s (process_exit_unsuccessful) |
+| python-system | ok 0.2s | ok 1.23s | FAILED 2.47s (process_exit_unsuccessful) |
+| python-venv | ok 0.13s | ok 1.6s | FAILED 1.27s (process_exit_unsuccessful) |
+| reads-everything | ok 0.12s | ok 2.51s | FAILED 2.47s (process_exit_unsuccessful) |
+| rust-bin | ok 0.02s | ok 2.5s | ok 1.96s |
+| shell-script | ok 0.08s | ok 2.76s | ok 2.4s |

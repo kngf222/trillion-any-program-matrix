@@ -1,0 +1,50 @@
+{
+  "case": "python-venv",
+  "label": "placed-0909",
+  "card": "python-venv",
+  "date": "2026-11-28 04:49:22 CST",
+  "load_average_1_5_15": [
+    23.59228515625,
+    21.177734375,
+    20.1630859375
+  ],
+  "direct": {
+    "argv": [
+      ".venv/bin/python",
+      "main.py"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/python-venv",
+    "exit": 0,
+    "seconds": 0.13,
+    "worked": true,
+    "stdout_bytes": 242,
+    "last_json_line": {
+      "program": "python-venv",
+      "prefix": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/python-venv/.venv",
+      "executable": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/python-venv/.venv/bin/python",
+      "rich": "15.0.0"
+    },
+    "stdout_tail": "{\"program\": \"python-venv\", \"prefix\": \"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/python-venv/.venv\", \"executable\": \"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/python-venv/.venv/bin/python\", \"rich\": \"15.0.0\"}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:python-venv",
+    "exit": 0,
+    "seconds": 1.6,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 692,
+    "stdout_tail": "{\n  \"exit_code\": 0,\n  \"replayed\": false,\n  \"result\": {\n    \"exit_code\": 0,\n    \"result\": {\n      \"executable\": \"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/python-venv/.venv/bin/python\",\n      \"prefix\": \"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/python-venv/.venv\",\n      \"program\": \"python-venv\",\n      \"rich\": \"15.0.0\"\n    },\n    \"stderr\": \"\",\n    \"stdout\": \"{\\\"program\\\": \\\"python-venv\\\", \\\"prefix\\\": \\\"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/python-venv/.venv\\\", \\\"executable\\\": \\\"/Users/brianakhtar/dev/trillion-any-program-matrix/programs/python-venv/.venv/bin/python\\\", \\\"rich\\\": \\\"15.0.0\\\"}\\n\"\n  },\n  \"tool\": \"tool:python-venv\"\n}\n",
+    "stderr": ""
+  },
+  "contained": {
+    "tool": "tool:python-venv-contained",
+    "exit": 0,
+    "seconds": 1.27,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 1416,
+    "stdout_tail": "{\n  \"cause\": \"trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:1036:21:condition: process_exit_unsuccessful#cdcfa4c8023e288089792d8d2fee812f3d0ccecf\",\n  \"error\": \"Python path configuration:\\n  PYTHONHOME = (not set)\\n  PYTHONPATH = (not set)\\n  program name = '/Users/brianakhtar/dev/trillion-any-program-matrix/programs/python-venv/.venv/bin/python'\\n  isolated = 0\\n  environment = 1\\n  user site = 1\\n  import site = 1\\n  sys._base_executable = '/Users/brianakhtar/dev/trillion-any-program-matrix/programs/python-venv/.venv/bin/python'\\n  sys.base_prefix = '/opt/homebrew/anaconda3'\\n  sys.base_exec_prefix = '/opt/homebrew/anaconda3'\\n  sys.platlibdir = 'lib'\\n  sys.executable = '/Users/brianakhtar/dev/trillion-any-program-matrix/programs/python-venv/.venv/bin/python'\\n  sys.prefix = '/opt/homebrew/anaconda3'\\n  sys.exec_prefix = '/opt/homebrew/anaconda3'\\n  sys.path = [\\n    '/opt/homebrew/anaconda3/lib/python310.zip',\\n    '/opt/homebrew/anaconda3/lib/python3.10',\\n    '/opt/homebrew/anaconda3/lib/python3.10/lib-dynload',\\n  ]\\nFatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding\\nPython runtime state: core initialized\\nModuleNotFoundError: No module named 'encodings'\\n\\nCurrent thread 0x00000001f8ee98c0 (most recent call first):\\n  <no Python frame>\",\n  \"exit_code\": 1,\n  \"replayed\": false,\n  \"tool\": \"tool:python-venv-contained\"\n}\n",
+    "stderr": ""
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "case": "limit-stdout-over",
+  "label": "after",
+  "card": "limit-stdout",
+  "date": "2026-11-28 00:25:18 CST",
+  "load_average_1_5_15": [
+    9.11572265625,
+    11.634765625,
+    8.66650390625
+  ],
+  "direct": {
+    "argv": [
+      "/usr/bin/python3",
+      "main.py",
+      "33554433"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/limit-stdout",
+    "exit": 0,
+    "seconds": 0.05,
+    "worked": true,
+    "stdout_bytes": 33554433,
+    "last_json_line": {
+      "program": "limit-stdout",
+      "total_bytes": 33554433
+    },
+    "stdout_tail": "[33554433 bytes, last 600]\nyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy\n{\"program\": \"limit-stdout\", \"total_bytes\": 33554433}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:limit-stdout",
+    "exit": 1,
+    "seconds": 0.71,
+    "worked": false,
+    "reference": "81d121e6-60a3-4c57-a76d-8faf621dae52",
+    "stdout_bytes": 0,
+    "stdout_tail": "",
+    "stderr": "The tool printed more than 33554432 bytes, the most one run's answer may hold here, so it was stopped and its answer was not kept. What it did before it was stopped is not known. Ask it for less, or have it write its answer to a file and print the file's name. Reference: 81d121e6-60a3-4c57-a76d-8faf621dae52. To ask again without doing it twice, add --request-key 81d121e6-60a3-4c57-a76d-8faf621dae52 to the command.\nhttps://app.gettrillion.ai/mcp refused do_one_thing_in_my_account with tools_run_answer_too_large. Cause: trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:983:94:condition: output_limit#90f192712e761b8570fdb84bda3187c3db4fe1f1\n"
+  },
+  "contained": {
+    "tool": "tool:limit-stdout-contained",
+    "exit": 0,
+    "seconds": 0.65,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 730,
+    "stdout_tail": "{\n  \"cause\": \"trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:1031:21:condition: process_exit_unsuccessful#90f192712e761b8570fdb84bda3187c3db4fe1f1\",\n  \"error\": \"xcrun: error: unable to load libxcrun (dlopen(/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib, 0x0005): tried: '/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib' (file system sandbox blocked open()), '/System/Volumes/Preboot/Cryptexes/OS/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib' (no such file), '/Applications/Xcode.app/Contents/Developer/usr/lib/libxcrun.dylib' (file system sandbox blocked open())).\",\n  \"exit_code\": 1,\n  \"replayed\": false,\n  \"tool\": \"tool:limit-stdout-contained\"\n}\n",
+    "stderr": ""
+  }
+}

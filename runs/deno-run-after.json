@@ -1,0 +1,51 @@
+{
+  "case": "deno-run",
+  "label": "after",
+  "card": "deno-run",
+  "date": "2026-11-28 00:22:49 CST",
+  "load_average_1_5_15": [
+    17.888671875,
+    11.3740234375,
+    7.88671875
+  ],
+  "direct": {
+    "argv": [
+      "deno",
+      "run",
+      "main.ts"
+    ],
+    "cwd": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/deno-run",
+    "exit": 0,
+    "seconds": 0.17,
+    "worked": true,
+    "stdout_bytes": 83,
+    "last_json_line": {
+      "program": "deno-run",
+      "deno": "2.9.8",
+      "ts": "6.0.3",
+      "exec": "/opt/homebrew/bin/deno"
+    },
+    "stdout_tail": "{\"program\":\"deno-run\",\"deno\":\"2.9.8\",\"ts\":\"6.0.3\",\"exec\":\"/opt/homebrew/bin/deno\"}\n",
+    "stderr_tail": ""
+  },
+  "through_trillion": {
+    "tool": "tool:deno-run",
+    "exit": 0,
+    "seconds": 1.1,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 378,
+    "stdout_tail": "{\n  \"exit_code\": 0,\n  \"replayed\": false,\n  \"result\": {\n    \"exit_code\": 0,\n    \"result\": {\n      \"deno\": \"2.9.8\",\n      \"exec\": \"/opt/homebrew/bin/deno\",\n      \"program\": \"deno-run\",\n      \"ts\": \"6.0.3\"\n    },\n    \"stderr\": \"\",\n    \"stdout\": \"{\\\"program\\\":\\\"deno-run\\\",\\\"deno\\\":\\\"2.9.8\\\",\\\"ts\\\":\\\"6.0.3\\\",\\\"exec\\\":\\\"/opt/homebrew/bin/deno\\\"}\\n\"\n  },\n  \"tool\": \"tool:deno-run\"\n}\n",
+    "stderr": ""
+  },
+  "contained": {
+    "tool": "tool:deno-run-contained",
+    "exit": 0,
+    "seconds": 0.92,
+    "worked": true,
+    "reference": null,
+    "stdout_bytes": 445,
+    "stdout_tail": "{\n  \"cause\": \"trillion::tool_runs::tools::container@src/tool_runs/tools/container.rs:1031:21:condition: process_exit_unsuccessful#90f192712e761b8570fdb84bda3187c3db4fe1f1\",\n  \"error\": \"Failed getting cwd: Operation not permitted (os error 1)\\n\\u001b[0m\\u001b[1m\\u001b[31merror\\u001b[0m: could not read current working directory: Operation not permitted (os error 1)\",\n  \"exit_code\": 1,\n  \"replayed\": false,\n  \"tool\": \"tool:deno-run-contained\"\n}\n",
+    "stderr": ""
+  }
+}

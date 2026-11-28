@@ -1,0 +1,125 @@
+{
+  "records": [
+    {
+      "payload": {
+        "kind": "ai-tool-descriptor",
+        "id": "tool:key-from-a-file",
+        "label": "Key from a file (proof provider)",
+        "job": "Give the value a secret:// path names, read from a file beside the program, never from the vault",
+        "status": "active",
+        "input_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path"
+          ],
+          "properties": {
+            "path": {
+              "type": "string"
+            }
+          }
+        },
+        "invoke": {
+          "kind": "computer",
+          "capabilities": [],
+          "workdir": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/key-from-a-file",
+          "argv": [
+            "/usr/bin/python3",
+            "-I",
+            "read.py",
+            {
+              "fill": {
+                "from": "input",
+                "field": "path"
+              }
+            }
+          ],
+          "stdout": "json"
+        },
+        "placements": [
+          "placement:your-computer"
+        ]
+      }
+    },
+    {
+      "payload": {
+        "kind": "ai-tool-descriptor",
+        "id": "tool:key-source-proof-allowed-host",
+        "label": "Key source proof: allowed host",
+        "job": "Send one request whose header holds a value named by secret:// (kept outside the vault) and show what the site received",
+        "status": "active",
+        "input_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {}
+        },
+        "invoke": {
+          "kind": "http",
+          "url": "https://httpbin.org/anything",
+          "method": "GET",
+          "timeout_seconds": 30,
+          "headers": {
+            "accept": "application/json"
+          },
+          "report_answer": true,
+          "credential_injections": [
+            {
+              "reference": "secret://proof-file/proof/echo-token",
+              "hosts": [
+                "httpbin.org"
+              ],
+              "placement": {
+                "kind": "header",
+                "name": "X-Proof-Value",
+                "prefix": ""
+              }
+            }
+          ]
+        },
+        "placements": [
+          "placement:your-computer"
+        ]
+      }
+    },
+    {
+      "payload": {
+        "kind": "ai-tool-descriptor",
+        "id": "tool:key-source-proof-other-host",
+        "label": "Key source proof: another host",
+        "job": "Send one request whose header holds a value named by secret:// (kept outside the vault) and show what the site received",
+        "status": "active",
+        "input_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {}
+        },
+        "invoke": {
+          "kind": "http",
+          "url": "https://postman-echo.com/get",
+          "method": "GET",
+          "timeout_seconds": 30,
+          "headers": {
+            "accept": "application/json"
+          },
+          "report_answer": true,
+          "credential_injections": [
+            {
+              "reference": "secret://proof-file/proof/echo-token",
+              "hosts": [
+                "postman-echo.com"
+              ],
+              "placement": {
+                "kind": "header",
+                "name": "X-Proof-Value",
+                "prefix": ""
+              }
+            }
+          ]
+        },
+        "placements": [
+          "placement:your-computer"
+        ]
+      }
+    }
+  ]
+}
