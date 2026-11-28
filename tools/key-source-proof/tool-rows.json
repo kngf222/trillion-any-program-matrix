@@ -21,10 +21,12 @@
         },
         "invoke": {
           "kind": "computer",
-          "capabilities": [],
+          "capabilities": [
+            "use-this-computer-as-you"
+          ],
           "workdir": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/key-from-a-file",
           "argv": [
-            "/usr/bin/python3",
+            "python3",
             "-I",
             "read.py",
             {
