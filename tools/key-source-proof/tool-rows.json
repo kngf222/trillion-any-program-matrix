@@ -122,6 +122,40 @@
           "placement:your-computer"
         ]
       }
+    },
+    {
+      "payload": {
+        "kind": "ai-tool-descriptor",
+        "id": "tool:key-source-proof-mounted",
+        "label": "Key source proof: value handed to a process",
+        "job": "Hand a contained program the value a secret:// reference names, in its environment, and print only its length",
+        "status": "active",
+        "input_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {}
+        },
+        "invoke": {
+          "kind": "computer",
+          "capabilities": [],
+          "workdir": "/Users/brianakhtar/dev/trillion-any-program-matrix/programs/key-from-a-file",
+          "argv": [
+            "/bin/sh",
+            "-c",
+            "printf '{\"held_chars\":%d}\\n' \"${#PROOF_VALUE}\""
+          ],
+          "stdout": "json",
+          "credential_mounts": [
+            {
+              "reference": "secret://proof-file/proof/echo-token",
+              "env": "PROOF_VALUE"
+            }
+          ]
+        },
+        "placements": [
+          "placement:your-computer"
+        ]
+      }
     }
   ]
 }
